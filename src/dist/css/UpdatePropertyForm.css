@@ -1,0 +1,368 @@
+.update-property-form {
+  margin: 1% 0 0 10%;
+  width: 80%;
+  background-color: rgba(230, 230, 230, 0.5);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.75rem;
+  font-family: "Inter", sans-serif;
+}
+.update-property-form input:focus, .update-property-form textarea:focus {
+  outline: none;
+}
+.update-property-form :focus::-moz-placeholder {
+  color: transparent;
+}
+.update-property-form :focus::placeholder {
+  color: transparent;
+}
+.update-property-form ::-moz-placeholder {
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.363em;
+}
+.update-property-form ::placeholder {
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.363em;
+}
+.update-property-form__heading {
+  display: inline-block;
+  margin: 1.5% 0 1.5% 10%;
+  width: 80%;
+  height: 6%;
+  color: rgb(100, 100, 100);
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+}
+.update-property-form__button--close-form {
+  display: inline-block;
+  margin: 0.5% 0 1.5% 2%;
+  padding: 0.5rem;
+  width: 5%;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.update-property-form__floating-label-group {
+  position: relative;
+  margin: 1% auto 1% auto;
+  width: 70%;
+}
+.update-property-form__floating-label {
+  position: absolute;
+  top: 1.75rem;
+  left: 1%;
+  pointer-events: none;
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.363em;
+  transition: 0.2s ease all;
+}
+.update-property-form__rent-and-currency-unit-group {
+  position: relative;
+  margin: 1% auto 1% auto;
+  width: 70%;
+}
+.update-property-form__rent-label-group {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  width: 55%;
+}
+.update-property-form__label-group {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 2%;
+  width: 43%;
+}
+.update-property-form__label {
+  margin: 0 2% 0 0;
+  width: 40%;
+  pointer-events: none;
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.363em;
+}
+input:focus ~ .update-property-form__floating-label, input:not(:focus):valid ~ .update-property-form__floating-label, input:is(.invalid-input, .valid-input) ~ .update-property-form__floating-label, textarea:focus ~ .update-property-form__floating-label, textarea:not(:focus):valid ~ .update-property-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .update-property-form__floating-label {
+  top: -0.05rem;
+  background-color: rgb(240, 240, 240);
+  opacity: 1;
+  font-size: 0.29em;
+}
+.update-property-form__country {
+  margin: 0 auto 0 auto;
+  padding: 1% 1% 1% 1%;
+  width: 100%;
+  height: 8%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.update-property-form__place {
+  margin: 0 auto 0 auto;
+  padding: 1% 1% 1% 1%;
+  width: 100%;
+  height: 8%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.update-property-form__total-area {
+  margin: 0 auto 0 auto;
+  padding: 1% 1% 1% 1%;
+  width: 100%;
+  height: 8%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.update-property-form__number-of-bedrooms {
+  margin: 0 auto 0 auto;
+  padding: 1% 1% 1% 1%;
+  width: 100%;
+  height: 8%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.update-property-form__number-of-bathrooms {
+  margin: 0 auto 0 auto;
+  padding: 1% 1% 1% 1%;
+  width: 100%;
+  height: 8%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.update-property-form__nearby-landmark {
+  margin: 0 auto 0 auto;
+  padding: 1% 1% 1% 1%;
+  width: 100%;
+  height: 8%;
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.update-property-form__monthly-rent {
+  margin: 0 auto 0 auto;
+  padding: 2%;
+  width: 100%;
+  height: 8%;
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.update-property-form__currency-unit {
+  margin: 0 auto 0 auto;
+  padding: 2%;
+  width: 58%;
+  height: 8%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.update-property-form__place:hover, .update-property-form__total-area:hover, .update-property-form__number-of-bedrooms:hover, .update-property-form__number-of-bathrooms:hover, .update-property-form__nearby-landmark:hover {
+  opacity: 1;
+  box-shadow: 0 10px 6px -6px rgb(155, 155, 155);
+}
+.update-property-form__place:focus, .update-property-form__place:active, .update-property-form__total-area:focus, .update-property-form__total-area:active, .update-property-form__number-of-bedrooms:focus, .update-property-form__number-of-bedrooms:active, .update-property-form__number-of-bathrooms:focus, .update-property-form__number-of-bathrooms:active, .update-property-form__nearby-landmark:focus, .update-property-form__nearby-landmark:active {
+  opacity: 1;
+  box-shadow: 0 2.8px 2.2px 0 rgba(0, 0, 0, 0.034), 0 6.7px 5.3px 0 rgba(0, 0, 0, 0.048), 0 12.5px 10px 0 rgba(0, 0, 0, 0.06), 0 22.3px 17.9px 0 rgba(0, 0, 0, 0.072), 0 41.8px 33.4px 0 rgba(0, 0, 0, 0.086), 0 100px 80px 0 rgba(0, 0, 0, 0.12);
+}
+.update-property-form__button--submit {
+  overflow: hidden;
+  position: relative;
+  margin: 2% 0 2% 40%;
+  padding: 0.5% 1% 0.5% 1%;
+  width: 23%;
+  height: 4rem;
+  background-color: rgb(71, 157, 255);
+  color: rgb(241, 245, 247);
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 2px 2px -1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  border: 0.1rem outset rgb(71, 157, 255);
+  border-radius: 2.5rem;
+  font-size: 0.727em;
+  transition: letter-spacing 0.2s, box-shadow 0.1s, transform 0.1s, background-color 0.2s ease-out;
+}
+.update-property-form__button--submit:hover:not([disabled]) {
+  letter-spacing: 0.05em;
+}
+.update-property-form__button--submit:active:not([disabled]) {
+  transform: translateY(0.1rem);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+}
+.update-property-form__show-error {
+  margin: 2% 0 0 0;
+  padding: 0.15% 0.15% 0.15% 0.25%;
+  width: 100%;
+  border-radius: 0.35em;
+  background: rgb(252, 178, 162);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 0, 0);
+  line-height: 1.2;
+  font-size: 0.363em;
+}
+.update-property-form__show-instructions {
+  margin: 1% auto 1% auto;
+  padding: 0.15% 0.15% 0.15% 0.25%;
+  width: 70%;
+  border-radius: 0.35em;
+  background: rgb(116, 134, 150);
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  font-size: 0.363em;
+}
+.update-property-form .button-disabled {
+  background-color: rgb(200, 200, 200) !important;
+  color: rgb(220, 220, 220) !important;
+  border: none !important;
+}
+.update-property-form .invalid-input {
+  border: 2px solid rgb(255, 0, 0) !important;
+}
+.update-property-form .valid-input {
+  border: 2px solid rgb(11, 212, 11) !important;
+}
+@media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
+  .update-property-form {
+    font-size: 1.75rem;
+  }
+  .update-property-form__button--close-form {
+    padding: 0.1rem;
+    height: 1.25rem;
+  }
+  .update-property-form__floating-label-group, .update-property-form__rent-and-currency-unit-group {
+    width: 80%;
+  }
+  .update-property-form__floating-label {
+    top: 0.75rem;
+    left: 0.75rem;
+  }
+  input:focus ~ .update-property-form__floating-label, input:not(:focus):valid ~ .update-property-form__floating-label, input:is(.invalid-input, .valid-input) ~ .update-property-form__floating-label, textarea:focus ~ .update-property-form__floating-label, textarea:not(:focus):valid ~ .update-property-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .update-property-form__floating-label {
+    top: -0.05rem;
+  }
+  .update-property-form__button--submit {
+    height: 2.5rem;
+  }
+  .update-property-form__show-instructions {
+    width: 80%;
+  }
+}
+@media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+  .update-property-form {
+    font-size: 1.5rem;
+  }
+  .update-property-form__button--close-form {
+    padding: 0.1rem;
+    height: 1.1rem;
+  }
+  .update-property-form__floating-label-group, .update-property-form__rent-and-currency-unit-group {
+    width: 90%;
+  }
+  .update-property-form__rent-label-group {
+    width: 53%;
+  }
+  .update-property-form__label-group {
+    width: 45%;
+  }
+  .update-property-form__floating-label {
+    top: 0.8rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .update-property-form__floating-label, input:not(:focus):valid ~ .update-property-form__floating-label, input:is(.invalid-input, .valid-input) ~ .update-property-form__floating-label, textarea:focus ~ .update-property-form__floating-label, textarea:not(:focus):valid ~ .update-property-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .update-property-form__floating-label {
+    top: -0.05rem;
+  }
+  .update-property-form__button--submit {
+    height: 2.15rem;
+  }
+  .update-property-form__show-instructions {
+    width: 80%;
+    font-size: 0.6rem;
+  }
+}
+@media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+  .update-property-form {
+    font-size: 1rem;
+  }
+  .update-property-form__button--close-form {
+    padding: 0.1rem;
+    height: 0.9rem;
+  }
+  .update-property-form__floating-label-group, .update-property-form__rent-and-currency-unit-group {
+    width: 90%;
+  }
+  .update-property-form__rent-label-group {
+    width: 53%;
+  }
+  .update-property-form__label-group {
+    width: 45%;
+  }
+  .update-property-form__floating-label {
+    top: 0.6rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .update-property-form__floating-label, input:not(:focus):valid ~ .update-property-form__floating-label, input:is(.invalid-input, .valid-input) ~ .update-property-form__floating-label, textarea:focus ~ .update-property-form__floating-label, textarea:not(:focus):valid ~ .update-property-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .update-property-form__floating-label {
+    top: -0.02rem;
+  }
+  .update-property-form__button--submit {
+    height: 2rem;
+  }
+  .update-property-form__show-instructions {
+    width: 90%;
+  }
+}
+@media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+  .update-property-form {
+    font-size: 1rem;
+  }
+  .update-property-form__button--close-form {
+    padding: 0.1rem;
+    height: 0.6rem;
+  }
+  .update-property-form__floating-label-group, .update-property-form__rent-and-currency-unit-group {
+    width: 90%;
+  }
+  .update-property-form__rent-label-group {
+    width: 37%;
+  }
+  .update-property-form__label-group {
+    width: 61%;
+  }
+  .update-property-form__floating-label {
+    top: 0.6rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .update-property-form__floating-label, input:not(:focus):valid ~ .update-property-form__floating-label, input:is(.invalid-input, .valid-input) ~ .update-property-form__floating-label, textarea:focus ~ .update-property-form__floating-label, textarea:not(:focus):valid ~ .update-property-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .update-property-form__floating-label {
+    top: -0.01rem;
+  }
+  .update-property-form__button--submit {
+    padding-top: 0.1rem;
+    height: 1.5rem;
+  }
+  .update-property-form__show-instructions {
+    width: 90%;
+  }
+}/*# sourceMappingURL=UpdatePropertyForm.css.map */

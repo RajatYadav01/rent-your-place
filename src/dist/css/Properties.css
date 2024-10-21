@@ -1,0 +1,633 @@
+.properties-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 2rem 0;
+  width: 100%;
+  min-height: 23rem;
+  background-color: rgb(241, 251, 255);
+}
+.properties-container__heading {
+  margin: 1% auto 0 auto;
+  width: 100%;
+  height: 3.5rem;
+  text-align: center;
+  font-size: 2.75rem;
+  color: rgb(46, 51, 109);
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+.properties-container__show-error {
+  margin: 2% 0 0 0;
+  padding: 0.15% 0.15% 0.15% 0.25%;
+  width: 100%;
+  border-radius: 0.35em;
+  background: rgb(252, 178, 162);
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-family: "Lato", sans-serif;
+  border: 2px solid rgb(255, 0, 0);
+}
+.properties-container__filters-and-properties-list-container {
+  display: flex;
+  flex-direction: column;
+}
+.properties-container__properties-list-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5% 0 0 0;
+  width: 100%;
+}
+.properties-container__properties-list {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5% 0 0 0;
+  width: 100%;
+}
+.properties-container__property {
+  z-index: 2;
+  flex: 0 1 auto;
+  margin: 0 1% 0 1%;
+  padding: 0.5rem;
+  background-color: rgb(224, 240, 251);
+  background-color: rgb(236, 193, 181);
+  list-style: none;
+  width: 23%;
+  height: 100%;
+  text-align: left;
+  color: rgb(50, 50, 50);
+  line-height: 2;
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border-radius: 0.5rem;
+}
+.properties-container__property-attributes-container {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 16.5rem;
+}
+.properties-container__property-attribute {
+  margin: 0;
+  width: 100%;
+}
+.properties-container__property-attribute-label {
+  font-weight: 400;
+}
+.properties-container__property-buttons-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem auto 0.25rem auto;
+  width: 100%;
+  height: 3.5rem;
+}
+.properties-container__like-button-and-count {
+  display: inline-flex;
+  padding: 0.25rem;
+  width: 47%;
+  height: 100%;
+  background-color: rgb(147, 95, 84);
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.properties-container__button {
+  margin: 0;
+  padding: 0.25rem;
+  width: 47%;
+  height: 20%;
+  color: rgb(230, 230, 230);
+  background-color: rgb(2, 132, 216);
+  background-color: rgb(147, 95, 84);
+  border-radius: 2rem;
+}
+.properties-container__button--like {
+  flex: 1 1 auto;
+  width: 45%;
+  height: 100%;
+}
+.properties-container__button--already-liked {
+  width: 47%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+}
+.properties-container__button--update {
+  flex: 1 1 auto;
+  margin: 0 0.25rem 0 0.5rem;
+  height: 100%;
+}
+.properties-container__button--interested, .properties-container__button--delete {
+  flex: 1 1 auto;
+  margin: 0 0.25rem 0 0.5rem;
+  height: 100%;
+}
+.properties-container__button--close-owner-details {
+  margin: 0.1rem 0 0 0;
+  padding: 0.5rem;
+  width: 50%;
+  height: 3.5rem;
+}
+.properties-container__like-count {
+  flex: 1 0 auto;
+  margin: 0;
+  padding: 0.5rem 0.25rem 0.25rem 0.25rem;
+  width: 55%;
+  height: 100%;
+  color: rgb(230, 230, 230);
+  text-align: center;
+  border-left: 1px solid rgb(255, 255, 255);
+}
+.properties-container__owner-details {
+  margin: 5% 0 0 0;
+  padding: 0.5rem;
+  background-color: rgb(236, 193, 181);
+  list-style: none;
+  width: 100%;
+  text-align: left;
+  color: rgb(50, 50, 50);
+  line-height: 1.1;
+  font-size: 1.15rem;
+  border-top: 0.1rem solid rgb(255, 255, 255);
+}
+.properties-container__slide-in-animation {
+  animation: slide-in 0.5s linear forwards;
+}
+@keyframes slide-in {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    height: 6.25rem;
+    opacity: 0.5;
+  }
+  100% {
+    height: 13.5rem;
+    opacity: 1;
+  }
+}
+.properties-container__slide-out-animation {
+  animation: slide-out 0.5s linear;
+}
+@keyframes slide-out {
+  0% {
+    height: 13.5rem;
+    opacity: 1;
+  }
+  50% {
+    height: 6.25rem;
+    opacity: 0.5;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+.properties-container__owner-details-heading {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+}
+.properties-container__owner-details-item {
+  margin: 4% 0 4% 0;
+  width: 100%;
+  text-align: left;
+}
+.properties-container__owner-details-item-label {
+  font-weight: 400;
+}
+.properties-container__no-properties-heading {
+  width: 100%;
+  height: 6%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+.properties-container__pagination-container {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2.5% 0 0 0;
+  width: 100%;
+  height: 6%;
+}
+.properties-container__number-of-properties-selector {
+  margin: 0 auto 0 1%;
+  padding: 0.25rem;
+  width: 4%;
+  height: 70%;
+  border-radius: 0.25rem;
+}
+@media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
+  .properties-container__heading {
+    height: 5%;
+    font-size: 2rem;
+  }
+  .properties-container__show-error {
+    font-size: 0.75rem;
+  }
+  .properties-container__properties-list {
+    margin-top: 1%;
+  }
+  .properties-container__property {
+    margin-bottom: 2%;
+    padding: 0.25rem;
+    font-size: 0.7rem;
+  }
+  .properties-container__property-attributes-container {
+    height: 10rem;
+  }
+  .properties-container__property-buttons-container {
+    height: 2rem;
+  }
+  .properties-container__like-button-and-count {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0.1rem;
+    font-size: 0.75rem;
+  }
+  .properties-container__like-icon {
+    padding: 0.25rem 0.05rem 0.05rem 0.05rem;
+  }
+  .properties-container__button {
+    font-size: 0.75rem;
+  }
+  .properties-container__button--like {
+    height: 100%;
+  }
+  .properties-container__button--update {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0;
+    height: 2rem;
+  }
+  .properties-container__button--interested, .properties-container__button--delete {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0;
+    height: 2rem;
+  }
+  .properties-container__button--close-owner-details {
+    margin: 0.1rem 0 0 0;
+    padding: 0.5rem;
+    height: 2rem;
+  }
+  .properties-container__like-count {
+    padding: 0.25rem 0.05rem 0.05rem 0.05rem;
+  }
+  .properties-container__owner-details {
+    font-size: 0.65rem;
+  }
+  @keyframes slide-in {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    50% {
+      height: 4.25rem;
+      opacity: 0.5;
+    }
+    100% {
+      height: 9.5rem;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-out {
+    0% {
+      height: 9.5rem;
+      opacity: 1;
+    }
+    50% {
+      height: 4.25rem;
+      opacity: 0.5;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+  .properties-container__no-properties-heading {
+    font-size: 1rem;
+  }
+  .properties-container__number-of-properties-selector {
+    margin: 0 auto 0 1%;
+    padding: 0.1rem;
+    width: 12.5%;
+    height: 70%;
+    border-radius: 0.25rem;
+  }
+}
+@media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+  .properties-container__heading {
+    height: 5%;
+    font-size: 2rem;
+  }
+  .properties-container__show-error {
+    font-size: 0.75rem;
+  }
+  .properties-container__properties-list {
+    margin-top: 1%;
+  }
+  .properties-container__property {
+    margin-bottom: 2%;
+    padding: 0.25rem;
+    font-size: 0.7rem;
+  }
+  .properties-container__property-attributes-container {
+    height: 10rem;
+  }
+  .properties-container__property-buttons-container {
+    height: 2rem;
+  }
+  .properties-container__like-button-and-count {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0.1rem;
+    font-size: 0.75rem;
+  }
+  .properties-container__like-icon {
+    padding: 0.25rem 0.05rem 0.05rem 0.05rem;
+  }
+  .properties-container__button {
+    font-size: 0.75rem;
+  }
+  .properties-container__button--like {
+    height: 100%;
+  }
+  .properties-container__button--update {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0;
+    height: 2rem;
+  }
+  .properties-container__button--interested, .properties-container__button--delete {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0;
+    height: 2rem;
+  }
+  .properties-container__button--close-owner-details {
+    margin: 0.1rem 0 0 0;
+    padding: 0.5rem;
+    height: 2rem;
+  }
+  .properties-container__like-count {
+    padding: 0.25rem 0.05rem 0.05rem 0.05rem;
+  }
+  .properties-container__owner-details {
+    font-size: 0.65rem;
+  }
+  @keyframes slide-in {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    50% {
+      height: 4.25rem;
+      opacity: 0.5;
+    }
+    100% {
+      height: 8.5rem;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-out {
+    0% {
+      height: 8.25rem;
+      opacity: 1;
+    }
+    50% {
+      height: 4.25rem;
+      opacity: 0.5;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+  .properties-container__no-properties-heading {
+    font-size: 1rem;
+  }
+  .properties-container__number-of-properties-selector {
+    margin: 0 auto 0 1%;
+    padding: 0.1rem;
+    width: 12.5%;
+    height: 70%;
+    border-radius: 0.25rem;
+  }
+}
+@media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+  .properties-container__heading {
+    height: 5%;
+    font-size: 1.5rem;
+  }
+  .properties-container__show-error {
+    font-size: 0.75rem;
+  }
+  .properties-container__filters-and-properties-list-container {
+    flex-direction: row;
+    margin: 2% 2.5% 0 2.5%;
+    height: auto;
+  }
+  .properties-container__properties-list-container {
+    margin-left: 4%;
+    width: 66%;
+  }
+  .properties-container__properties-list {
+    margin-top: 1%;
+    flex-direction: column;
+  }
+  .properties-container__property {
+    margin-bottom: 2%;
+    padding: 0.25rem;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .properties-container__property-attributes-container {
+    height: 13rem;
+  }
+  .properties-container__property-buttons-container {
+    height: 2rem;
+  }
+  .properties-container__like-button-and-count {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0.1rem;
+    font-size: 0.5rem;
+  }
+  .properties-container__like-icon {
+    padding: 0.4rem 0.05rem 0.05rem 0.05rem;
+  }
+  .properties-container__button {
+    font-size: 0.75rem;
+  }
+  .properties-container__button--like {
+    height: 100%;
+  }
+  .properties-container__button--update {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0;
+    height: 2rem;
+  }
+  .properties-container__button--interested, .properties-container__button--delete {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0;
+    height: 2rem;
+  }
+  .properties-container__button--close-owner-details {
+    margin: 0.1rem 0 0 0;
+    padding: 0.5rem;
+    height: 2rem;
+  }
+  .properties-container__like-count {
+    padding: 0.1rem 0.05rem 0.05rem 0.05rem;
+    font-size: 0.75rem;
+  }
+  .properties-container__owner-details {
+    font-size: 0.9rem;
+  }
+  @keyframes slide-in {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    50% {
+      height: 6rem;
+      opacity: 0.5;
+    }
+    100% {
+      height: 12rem;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-out {
+    0% {
+      height: 12rem;
+      opacity: 1;
+    }
+    50% {
+      height: 6rem;
+      opacity: 0.5;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+  .properties-container__no-properties-heading {
+    font-size: 1rem;
+  }
+  .properties-container__number-of-properties-selector {
+    margin: 0 auto 0 1%;
+    padding: 0.1rem;
+    width: 12.5%;
+    height: 70%;
+    border-radius: 0.25rem;
+  }
+}
+@media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+  .properties-container__heading {
+    height: 5%;
+    font-size: 1rem;
+  }
+  .properties-container__show-error {
+    font-size: 0.75rem;
+  }
+  .properties-container__filters-and-properties-list-container {
+    flex-direction: row;
+    margin: 2% 2.5% 0 2.5%;
+    height: auto;
+  }
+  .properties-container__properties-list-container {
+    margin-left: 4%;
+    width: 66%;
+  }
+  .properties-container__properties-list {
+    margin-top: 1%;
+    flex-direction: column;
+  }
+  .properties-container__property {
+    margin-bottom: 2%;
+    padding: 0.25rem;
+    width: 100%;
+    font-size: 0.65rem;
+  }
+  .properties-container__property-attributes-container {
+    height: 9.5rem;
+  }
+  .properties-container__property-buttons-container {
+    height: 2rem;
+  }
+  .properties-container__like-button-and-count {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0.1rem;
+    font-size: 0.5rem;
+  }
+  .properties-container__like-icon {
+    padding: 0.4rem 0.05rem 0.05rem 0.05rem;
+  }
+  .properties-container__button {
+    font-size: 0.5rem;
+  }
+  .properties-container__button--like {
+    height: 100%;
+  }
+  .properties-container__button--update {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0;
+    height: 2rem;
+  }
+  .properties-container__button--interested, .properties-container__button--delete {
+    margin: 0.1rem 0.05rem 0.05rem 0.05rem;
+    padding: 0;
+    height: 2rem;
+  }
+  .properties-container__button--close-owner-details {
+    margin: 0.1rem 0 0 0;
+    padding: 0.5rem;
+    height: 2rem;
+  }
+  .properties-container__like-count {
+    padding: 0.4rem 0.05rem 0.05rem 0.05rem;
+  }
+  .properties-container__owner-details {
+    font-size: 0.65rem;
+  }
+  @keyframes slide-in {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    50% {
+      height: 4.25rem;
+      opacity: 0.5;
+    }
+    100% {
+      height: 8.5rem;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-out {
+    0% {
+      height: 8.5rem;
+      opacity: 1;
+    }
+    50% {
+      height: 4.25rem;
+      opacity: 0.5;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+  .properties-container__no-properties-heading {
+    font-size: 1rem;
+  }
+  .properties-container__number-of-properties-selector {
+    margin: 0 auto 0 1%;
+    padding: 0.1rem;
+    width: 12.5%;
+    height: 70%;
+    border-radius: 0.25rem;
+  }
+}/*# sourceMappingURL=Properties.css.map */

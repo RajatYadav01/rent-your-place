@@ -1,0 +1,344 @@
+.registration-form {
+  margin: 2% 0 2% 0;
+  width: 100%;
+  height: 60%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.65em;
+  font-family: "Inter", sans-serif;
+}
+.registration-form input:focus, .registration-form textarea:focus {
+  outline: none;
+}
+.registration-form :focus::-moz-placeholder {
+  color: transparent;
+}
+.registration-form :focus::placeholder {
+  color: transparent;
+}
+.registration-form ::-moz-placeholder {
+  color: rgba(93, 93, 93, 0.7); /* #5d5d5d; */
+  font-weight: 300;
+  font-size: 0.6em;
+}
+.registration-form ::placeholder {
+  color: rgba(93, 93, 93, 0.7); /* #5d5d5d; */
+  font-weight: 300;
+  font-size: 0.6em;
+}
+.registration-form__label-group {
+  position: relative;
+  margin: 2% 0 2% 0;
+  width: 70%;
+  height: 12%;
+}
+.registration-form__label {
+  margin: 0;
+  width: 25%;
+  pointer-events: none;
+  color: rgba(93, 93, 93, 0.7); /* #5d5d5d; */
+  font-weight: 300;
+  font-size: 0.55em;
+}
+.registration-form__name-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2% 0 2% 0;
+  width: 100%;
+  height: 12%;
+}
+.registration-form__name-floating-label-group {
+  flex: 1 0 auto;
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.registration-form__name-floating-label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  pointer-events: none;
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.55em;
+  transition: 0.2s ease all;
+}
+.registration-form__floating-label-group {
+  position: relative;
+  margin: 2% auto 2% auto;
+  width: 100%;
+  height: 12%;
+}
+.registration-form__floating-label {
+  position: absolute;
+  top: 1.1rem;
+  left: 1rem;
+  pointer-events: none;
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.55em;
+  transition: 0.2s ease all;
+}
+input:focus ~ .registration-form__name-floating-label, input:not(:focus):valid ~ .registration-form__name-floating-label, input:is(.invalid-input, .valid-input) ~ .registration-form__name-floating-label, input:focus ~ .registration-form__floating-label, input:not(:focus):valid ~ .registration-form__floating-label, input:is(.invalid-input, .valid-input) ~ .registration-form__floating-label, textarea:focus ~ .registration-form__floating-label, textarea:not(:focus):valid ~ .registration-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .registration-form__floating-label {
+  top: -0.65rem;
+  background-color: rgb(240, 240, 240);
+  opacity: 1;
+  font-size: 0.45em;
+}
+.registration-form__user-type {
+  margin: 0 0 0 2%;
+  padding: 1.35%;
+  width: 45%;
+  height: 100%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  font-size: 0.8em;
+}
+.registration-form__first-name {
+  flex: 1 0 auto;
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 0.8em;
+}
+.registration-form__last-name {
+  flex: 1 0 auto;
+  margin: 0 0 0 1.5%;
+  padding: 2% 2% 2% 2%;
+  width: 98.5%;
+  height: 100%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 0.8em;
+}
+.registration-form__email-address {
+  padding: 1% 1% 1% 1%;
+  width: 51%;
+  height: 100%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.8em;
+}
+.registration-form__phone-number {
+  padding: 1% 1% 1% 1%;
+  width: 51%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  font-size: 0.8em;
+}
+.registration-form__password {
+  padding: 1% 1% 1% 1%;
+  width: 51%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  font-size: 0.8em;
+}
+.registration-form__confirm-password {
+  padding: 1% 1% 1% 1%;
+  width: 51%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  font-size: 0.8em;
+}
+.registration-form__first-name:hover, .registration-form__last-name:hover, .registration-form__email-address:hover, .registration-form__phone-number:hover, .registration-form__password:hover, .registration-form__confirm-password:hover {
+  opacity: 1;
+  box-shadow: 0 10px 6px -6px rgb(155, 155, 155);
+}
+.registration-form__first-name:focus, .registration-form__first-name:active, .registration-form__last-name:focus, .registration-form__last-name:active, .registration-form__email-address:focus, .registration-form__email-address:active, .registration-form__phone-number:focus, .registration-form__phone-number:active, .registration-form__password:focus, .registration-form__password:active, .registration-form__confirm-password:focus, .registration-form__confirm-password:active {
+  opacity: 1;
+  box-shadow: 0 2.8px 2.2px 0 rgba(0, 0, 0, 0.034), 0 6.7px 5.3px 0 rgba(0, 0, 0, 0.048), 0 12.5px 10px 0 rgba(0, 0, 0, 0.06), 0 22.3px 17.9px 0 rgba(0, 0, 0, 0.072), 0 41.8px 33.4px 0 rgba(0, 0, 0, 0.086), 0 100px 80px 0 rgba(0, 0, 0, 0.12);
+}
+.registration-form__password-visibility-icon {
+  margin: 0 0 0 1%;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+.registration-form__button--register {
+  overflow: hidden;
+  margin: 1% 0 0 40%;
+  padding: 0.5% 1% 0.5% 1%;
+  width: 23%;
+  height: 3.5rem;
+  background-color: rgb(71, 157, 255);
+  color: rgb(241, 245, 247);
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 2px 2px -1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  border: 0.1rem outset rgb(71, 157, 255);
+  border-radius: 2.5rem;
+  line-height: 1.5;
+  font-size: 1.11em;
+  transition: letter-spacing 0.2s, box-shadow 0.1s, transform 0.1s, background-color 0.2s ease-out;
+}
+.registration-form__button--register:hover:not([disabled]) {
+  letter-spacing: 0.1em;
+}
+.registration-form__button--register:active:not([disabled]) {
+  transform: translateY(0.1rem);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+}
+.registration-form__show-error {
+  margin: 2% 0 0 0;
+  padding: 0.15% 0.15% 0.15% 0.25%;
+  width: 100%;
+  border-radius: 0.35em;
+  background: rgb(252, 178, 162);
+  border: 2px solid rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.registration-form__show-instructions {
+  margin: 0;
+  padding: 0.15% 0.15% 0.15% 0.25%;
+  width: 50%;
+  border-radius: 0.35em;
+  background: rgb(116, 134, 150);
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.registration-form .button-disabled {
+  background-color: rgb(200, 200, 200) !important;
+  color: rgb(220, 220, 220) !important;
+  border: none !important;
+}
+.registration-form .invalid-input {
+  border: 2px solid rgb(255, 0, 0) !important;
+}
+.registration-form .valid-input {
+  border: 2px solid rgb(11, 212, 11) !important;
+}
+@media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
+  .registration-form__label-group {
+    width: 80%;
+  }
+  .registration-form__label {
+    width: 22%;
+  }
+  .registration-form__name-floating-label {
+    top: 0.75rem;
+    left: 0.75rem;
+  }
+  .registration-form__floating-label {
+    top: 0.75rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .registration-form__name-floating-label, input:not(:focus):valid ~ .registration-form__name-floating-label, input:is(.invalid-input, .valid-input) ~ .registration-form__name-floating-label, input:focus ~ .registration-form__floating-label, input:not(:focus):valid ~ .registration-form__floating-label, input:is(.invalid-input, .valid-input) ~ .registration-form__floating-label, textarea:focus ~ .registration-form__floating-label, textarea:not(:focus):valid ~ .registration-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .registration-form__floating-label {
+    top: -0.45rem;
+  }
+  .registration-form__user-type {
+    width: 40%;
+  }
+  .registration-form__button--register {
+    padding-top: 0.25rem;
+    height: 2.5rem;
+  }
+  .registration-form__show-error, .registration-form__show-instructions {
+    width: 100%;
+  }
+}
+@media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+  .registration-form__label-group {
+    width: 90%;
+  }
+  .registration-form__label {
+    width: 20%;
+  }
+  .registration-form__name-floating-label {
+    top: 0.6rem;
+    left: 0.7rem;
+  }
+  .registration-form__floating-label {
+    top: 0.6rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .registration-form__name-floating-label, input:not(:focus):valid ~ .registration-form__name-floating-label, input:is(.invalid-input, .valid-input) ~ .registration-form__name-floating-label, input:focus ~ .registration-form__floating-label, input:not(:focus):valid ~ .registration-form__floating-label, input:is(.invalid-input, .valid-input) ~ .registration-form__floating-label, textarea:focus ~ .registration-form__floating-label, textarea:not(:focus):valid ~ .registration-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .registration-form__floating-label {
+    top: -0.35rem;
+  }
+  .registration-form__user-type {
+    width: 40%;
+  }
+  .registration-form__button--register {
+    padding-top: 0.1rem;
+    height: 2rem;
+  }
+  .registration-form__show-error, .registration-form__show-instructions {
+    width: 100%;
+  }
+}
+@media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+  .registration-form__label-group {
+    width: 90%;
+  }
+  .registration-form__label {
+    width: 25%;
+  }
+  .registration-form__name-floating-label {
+    top: 0.55rem;
+    left: 0.6rem;
+  }
+  .registration-form__floating-label {
+    top: 0.55rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .registration-form__name-floating-label, input:not(:focus):valid ~ .registration-form__name-floating-label, input:is(.invalid-input, .valid-input) ~ .registration-form__name-floating-label, input:focus ~ .registration-form__floating-label, input:not(:focus):valid ~ .registration-form__floating-label, input:is(.invalid-input, .valid-input) ~ .registration-form__floating-label, textarea:focus ~ .registration-form__floating-label, textarea:not(:focus):valid ~ .registration-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .registration-form__floating-label {
+    top: -0.35rem;
+  }
+  .registration-form__user-type {
+    width: 40%;
+  }
+  .registration-form__button--register {
+    padding-top: 0.1rem;
+    height: 2rem;
+  }
+  .registration-form__show-error, .registration-form__show-instructions {
+    width: 100%;
+  }
+}
+@media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+  .registration-form__label-group {
+    width: 90%;
+  }
+  .registration-form__label {
+    width: 25%;
+  }
+  .registration-form__name-floating-label {
+    top: 0.4rem;
+    left: 0.5rem;
+  }
+  .registration-form__floating-label {
+    top: 0.4rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .registration-form__name-floating-label, input:not(:focus):valid ~ .registration-form__name-floating-label, input:is(.invalid-input, .valid-input) ~ .registration-form__name-floating-label, input:focus ~ .registration-form__floating-label, input:not(:focus):valid ~ .registration-form__floating-label, input:is(.invalid-input, .valid-input) ~ .registration-form__floating-label, textarea:focus ~ .registration-form__floating-label, textarea:not(:focus):valid ~ .registration-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .registration-form__floating-label {
+    top: -0.2rem;
+  }
+  .registration-form__user-type {
+    width: 40%;
+  }
+  .registration-form__button--register {
+    height: 2rem;
+  }
+  .registration-form__show-error, .registration-form__show-instructions {
+    width: 100%;
+  }
+}/*# sourceMappingURL=RegistrationForm.css.map */

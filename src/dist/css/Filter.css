@@ -1,0 +1,491 @@
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0 0 0;
+  padding: 0;
+  width: 100%;
+  height: 6.5rem;
+  font-size: 2.25rem;
+  font-family: "Manrope", sans-serif;
+}
+.filter-container :focus::-moz-placeholder {
+  color: transparent;
+}
+.filter-container :focus::placeholder {
+  color: transparent;
+}
+.filter-container ::-moz-placeholder {
+  color: rgba(93, 93, 93, 0.7);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8em;
+  font-family: "Inter", sans-serif;
+}
+.filter-container ::placeholder {
+  color: rgba(93, 93, 93, 0.7);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8em;
+  font-family: "Inter", sans-serif;
+}
+.filter-container__main-filters {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+  height: 75%;
+}
+.filter-container__heading {
+  flex: 0 1 auto;
+  margin: auto 1% auto 1%;
+  width: 8%;
+  height: 100%;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  font-size: 1em;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 54, 126);
+  border-radius: 1.5rem;
+}
+.filter-container__label {
+  flex: 1 0 auto;
+  padding-top: 0.25rem;
+  width: 100%;
+  height: 50%;
+  text-align: left;
+  color: rgb(50, 50, 50);
+  font-size: 0.55em;
+  font-weight: 400;
+}
+.filter-container__search {
+  flex: 1 0 auto;
+  padding: 0.15rem;
+  width: 100%;
+  height: 50%;
+  border-radius: 0.25rem;
+  font-size: 0.44em;
+  font-weight: 400;
+}
+.filter-container__country {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 0 1% 0 1%;
+  width: 7%;
+  height: 100%;
+}
+.filter-container__place {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 0 1% 0 1%;
+  width: 7%;
+  height: 100%;
+}
+.filter-container__area {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 0 1% 0 1%;
+  width: 13%;
+  height: 100%;
+}
+.filter-container__area-search-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+  border-radius: 0.25rem;
+}
+.filter-container__area-search {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0.15rem;
+  width: 47%;
+  height: 100%;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+.filter-container__separator {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0.1rem;
+  width: 6%;
+  height: 100%;
+  text-align: center;
+  font-size: 0.55em;
+  font-weight: 400;
+}
+.filter-container__number-of-bedrooms {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 0 1% 0 1%;
+  width: 11%;
+  height: 100%;
+}
+.filter-container__number-of-bathrooms {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 0 1% 0 1%;
+  width: 11%;
+  height: 100%;
+}
+.filter-container__nearby-landmark {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 0 1% 0 1%;
+  width: 10%;
+  height: 100%;
+}
+.filter-container__rent-and-currency-unit-container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin: 0 1% 0 1%;
+  width: 17%;
+  height: 100%;
+}
+.filter-container__rent {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin: 0 1% 0 1%;
+  width: 73%;
+  height: 100%;
+}
+.filter-container__rent-search-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+  border-radius: 0.25rem;
+}
+.filter-container__rent-search {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0.15rem;
+  width: 47%;
+  height: 100%;
+  border-radius: 0.25rem;
+  font-size: 0.44em;
+  font-weight: 400;
+}
+.filter-container__currency-unit {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  margin: 0 1% 0 1%;
+  width: 23%;
+  height: 50%;
+  font-size: 0.44em;
+  font-weight: 400;
+}
+.filter-container__other-filters {
+  display: flex;
+  flex-direction: row;
+  margin: 1% 0 0 0;
+  width: 55%;
+  height: 24%;
+}
+.filter-container__user-properties {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0 1% 0 1%;
+  width: 20%;
+  height: 100%;
+}
+.filter-container__user-properties-checkbox {
+  flex: 1 1 auto;
+  margin: 0 1.5% 0 1.5%;
+  width: 4%;
+  height: 100%;
+}
+.filter-container__user-properties-label {
+  flex: 1 1 auto;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 1.5% 0 1.5%;
+  width: 90%;
+  height: 100%;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+.filter-container__liked-properties {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0 1% 0 1%;
+  width: 20%;
+  height: 100%;
+}
+.filter-container__liked-properties-checkbox {
+  flex: 1 1 auto;
+  margin: 0 1.5% 0 1.5%;
+  width: 4%;
+  height: 100%;
+}
+.filter-container__liked-properties-label {
+  flex: 1 1 auto;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 1.5% 0 1.5%;
+  width: 90%;
+  height: 100%;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Manrope", sans-serif;
+}
+@media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
+  .filter-container__heading {
+    line-height: 2.15;
+    height: 70%;
+    font-size: 1.5rem;
+  }
+  .filter-container__label {
+    font-size: 0.9rem;
+  }
+  .filter-container__search {
+    font-size: 0.75rem;
+  }
+  .filter-container__area-search {
+    font-size: 0.75rem;
+  }
+  .filter-container__separator {
+    padding-top: 0.25rem;
+    font-size: 0.9rem;
+  }
+  .filter-container__user-properties-label, .filter-container__liked-properties-label {
+    font-size: 0.9rem;
+  }
+}
+@media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+  .filter-container__heading {
+    line-height: 2.75;
+    height: 60%;
+    font-size: 0.9rem;
+  }
+  .filter-container__label {
+    font-size: 0.75rem;
+  }
+  .filter-container__search {
+    font-size: 0.6rem;
+  }
+  .filter-container__area-search {
+    font-size: 0.6rem;
+  }
+  .filter-container__separator {
+    padding-top: 0.25rem;
+    font-size: 0.75rem;
+  }
+  .filter-container__user-properties-label, .filter-container__liked-properties-label {
+    font-size: 0.75rem;
+  }
+}
+@media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+  .filter-container {
+    width: 30%;
+    height: 31rem;
+  }
+  .filter-container__heading {
+    margin: 0 auto 0 auto;
+    width: 90%;
+    height: 10%;
+    line-height: 2.5;
+    font-size: 1rem;
+  }
+  .filter-container__main-filters {
+    flex-direction: column;
+    height: 85%;
+  }
+  .filter-container__label {
+    width: 100%;
+    font-size: 0.75rem;
+  }
+  .filter-container__search {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+  .filter-container__country {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__place {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__area {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 13%;
+  }
+  .filter-container__area-search-container {
+    width: 100%;
+  }
+  .filter-container__area-search {
+    font-size: 0.6rem;
+  }
+  .filter-container__separator {
+    padding-top: 0.25rem;
+    font-size: 0.75rem;
+  }
+  .filter-container__number-of-bedrooms {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__number-of-bathrooms {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__nearby-landmark {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__rent-and-currency-unit-container {
+    flex-direction: column;
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 13%;
+  }
+  .filter-container__rent {
+    width: 100%;
+  }
+  .filter-container__rent-search {
+    font-size: 0.6rem;
+  }
+  .filter-container__currency-unit {
+    margin-top: 1%;
+    width: 100%;
+    font-size: 0.6rem;
+  }
+  .filter-container__other-filters {
+    flex-direction: column;
+    margin-top: 5%;
+    width: 100%;
+    height: 16%;
+  }
+  .filter-container__user-properties, .filter-container__liked-properties {
+    width: 100%;
+    height: 50%;
+  }
+  .filter-container__user-properties-checkbox {
+    width: 4%;
+  }
+  .filter-container__user-properties-label, .filter-container__liked-properties-label {
+    margin-left: 1%;
+    width: 95%;
+    font-size: 0.7rem;
+  }
+}
+@media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+  .filter-container {
+    width: 30%;
+    height: 20rem;
+  }
+  .filter-container__heading {
+    margin: 0 auto 0 auto;
+    width: 90%;
+    height: 10%;
+    line-height: 2.5;
+    font-size: 0.6rem;
+  }
+  .filter-container__main-filters {
+    flex-direction: column;
+    height: 85%;
+  }
+  .filter-container__label {
+    width: 100%;
+    font-size: 0.4rem;
+  }
+  .filter-container__search {
+    width: 100%;
+    font-size: 0.35rem;
+  }
+  .filter-container__country {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__place {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__area {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 13%;
+  }
+  .filter-container__area-search-container {
+    width: 100%;
+  }
+  .filter-container__area-search {
+    font-size: 0.35rem;
+  }
+  .filter-container__separator {
+    padding-top: 0.25rem;
+    font-size: 0.35rem;
+  }
+  .filter-container__number-of-bedrooms {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__number-of-bathrooms {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__nearby-landmark {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__rent-and-currency-unit-container {
+    flex-direction: column;
+    margin: 1% 0 1% 0;
+    width: 100%;
+    height: 13%;
+  }
+  .filter-container__rent {
+    width: 100%;
+  }
+  .filter-container__rent-search {
+    font-size: 0.35rem;
+  }
+  .filter-container__currency-unit {
+    margin-top: 1%;
+    width: 100%;
+    font-size: 0.35rem;
+  }
+  .filter-container__other-filters {
+    flex-direction: column;
+    margin-top: 5%;
+    width: 100%;
+    height: 12%;
+  }
+  .filter-container__user-properties, .filter-container__liked-properties {
+    width: 100%;
+    height: 50%;
+  }
+  .filter-container__user-properties-checkbox {
+    width: 4%;
+  }
+  .filter-container__user-properties-label, .filter-container__liked-properties-label {
+    margin-left: 1%;
+    width: 95%;
+    font-size: 0.35rem;
+  }
+}/*# sourceMappingURL=Filter.css.map */

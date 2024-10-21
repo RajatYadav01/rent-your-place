@@ -1,0 +1,449 @@
+.update-profile-form {
+  margin: 1% 0 0 10%;
+  width: 80%;
+  background-color: rgba(230, 230, 230, 0.5);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.75rem;
+  font-family: "Inter", sans-serif;
+}
+.update-profile-form input:focus, .update-profile-form textarea:focus {
+  outline: none;
+}
+.update-profile-form :focus::-moz-placeholder {
+  color: transparent;
+}
+.update-profile-form :focus::placeholder {
+  color: transparent;
+}
+.update-profile-form ::-moz-placeholder {
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.363em;
+}
+.update-profile-form ::placeholder {
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.363em;
+}
+.update-profile-form__heading {
+  display: inline-block;
+  margin: 1.5% 0 1% 10%;
+  width: 80%;
+  height: 6%;
+  color: rgb(100, 100, 100);
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+}
+.update-profile-form__button--close-form {
+  display: inline-block;
+  margin: 0.5% 0 1% 3%;
+  padding: 0.5rem;
+  width: 5%;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.update-profile-form__label-group {
+  position: relative;
+  margin: 1% 0 2% 5%;
+  width: 80%;
+  height: 16%;
+}
+.update-profile-form__label {
+  margin: 0;
+  width: 20%;
+  pointer-events: none;
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.363em;
+}
+.update-profile-form__name-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1.5% 0 1% 5%;
+  width: 65%;
+  height: 8%;
+}
+.update-profile-form__name-floating-label-group {
+  flex: 1 0 auto;
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.update-profile-form__name-floating-label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  pointer-events: none;
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.363em;
+  transition: 0.2s ease all;
+}
+.update-profile-form__floating-label-group {
+  position: relative;
+  margin: 1.5% 0 1.5% 5%;
+  width: 65%;
+  height: 7%;
+}
+.update-profile-form__floating-label {
+  position: absolute;
+  top: 1.1rem;
+  left: 1rem;
+  pointer-events: none;
+  color: rgba(93, 93, 93, 0.7);
+  font-weight: 300;
+  font-size: 0.363em;
+  transition: 0.2s ease all;
+}
+input:focus ~ .update-profile-form__name-floating-label, input:not(:focus):valid ~ .update-profile-form__name-floating-label, input:is(.invalid-input, .valid-input) ~ .update-profile-form__name-floating-label, input:focus ~ .update-profile-form__floating-label, input:not(:focus):valid ~ .update-profile-form__floating-label, input:is(.invalid-input, .valid-input) ~ .update-profile-form__floating-label, textarea:focus ~ .update-profile-form__floating-label, textarea:not(:focus):valid ~ .update-profile-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .update-profile-form__floating-label {
+  top: -0.65rem;
+  background-color: rgb(240, 240, 240);
+  opacity: 1;
+  font-size: 0.29em;
+}
+.update-profile-form__user-type {
+  margin: 0 0 0 2%;
+  padding: 1%;
+  width: 29%;
+  height: 50%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  font-size: 0.55em;
+}
+.update-profile-form__user-type-warning {
+  margin: 1% 0 0 0;
+  padding: 0.15% 0.15% 0.15% 0.25%;
+  width: 100%;
+  height: 50%;
+  border-radius: 0.35em;
+  color: rgb(241, 65, 28);
+  line-height: 1.2;
+  font-size: 0.45em;
+}
+.update-profile-form__first-name {
+  flex: 1 0 auto;
+  padding: 2% 2% 2% 2%;
+  width: 100%;
+  height: 100%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 0.55em;
+}
+.update-profile-form__last-name {
+  flex: 1 0 auto;
+  margin: 0 0 0 1.5%;
+  padding: 2% 2% 2% 2%;
+  width: 98.5%;
+  height: 100%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 0.55em;
+}
+.update-profile-form__email-address {
+  margin: 0;
+  padding: 1% 1% 1% 1%;
+  width: 51%;
+  height: 100%;
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  background-color: rgb(220, 220, 220);
+  color: rgb(180, 180, 180);
+  font-size: 0.55em;
+}
+.update-profile-form__phone-number {
+  margin: 0;
+  padding: 1% 1% 1% 1%;
+  width: 51%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  font-size: 0.55em;
+}
+.update-profile-form__password {
+  margin: 0;
+  padding: 1% 1% 1% 1%;
+  width: 51%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  font-size: 0.55em;
+}
+.update-profile-form__confirm-password {
+  margin: 0;
+  padding: 1% 1% 1% 1%;
+  width: 51%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(124, 137, 147);
+  border-radius: 0.5rem;
+  font-size: 0.55em;
+}
+.update-profile-form__first-name:hover, .update-profile-form__last-name:hover, .update-profile-form__phone-number:hover, .update-profile-form__password:hover, .update-profile-form__confirm-password:hover {
+  opacity: 1;
+  box-shadow: 0 10px 6px -6px rgb(155, 155, 155);
+}
+.update-profile-form__first-name:focus, .update-profile-form__first-name:active, .update-profile-form__last-name:focus, .update-profile-form__last-name:active, .update-profile-form__phone-number:focus, .update-profile-form__phone-number:active, .update-profile-form__password:focus, .update-profile-form__password:active, .update-profile-form__confirm-password:focus, .update-profile-form__confirm-password:active {
+  opacity: 1;
+  box-shadow: 0 2.8px 2.2px 0 rgba(0, 0, 0, 0.034), 0 6.7px 5.3px 0 rgba(0, 0, 0, 0.048), 0 12.5px 10px 0 rgba(0, 0, 0, 0.06), 0 22.3px 17.9px 0 rgba(0, 0, 0, 0.072), 0 41.8px 33.4px 0 rgba(0, 0, 0, 0.086), 0 100px 80px 0 rgba(0, 0, 0, 0.12);
+}
+.update-profile-form__password-visibility-icon {
+  margin: 0 0 0 1%;
+  font-size: 0.49em;
+  cursor: pointer;
+}
+.update-profile-form__buttons-container {
+  display: flex;
+  flex-direction: row;
+}
+.update-profile-form__button {
+  overflow: hidden;
+  display: inline-block;
+  padding: 0.5% 1% 0.5% 1%;
+  width: 23%;
+  height: 4rem;
+  color: rgb(241, 245, 247);
+  text-align: center;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 2px 2px -1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  border: 0.1rem outset rgb(71, 157, 255);
+  border-radius: 2.5rem;
+  font-size: 0.727em;
+  transition: letter-spacing 0.2s, box-shadow 0.1s, transform 0.1s, background-color 0.2s ease-out;
+}
+.update-profile-form__button--update {
+  margin: 1% 0 3% 5%;
+  background-color: rgb(71, 157, 255);
+}
+.update-profile-form__button--delete {
+  margin: 1% 0 3% 45%;
+  width: 25%;
+  background-color: rgb(241, 65, 28);
+}
+.update-profile-form__button:hover:not([disabled]) {
+  letter-spacing: 0.05em;
+}
+.update-profile-form__button:active:not([disabled]) {
+  transform: translateY(0.1rem);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+}
+.update-profile-form .button-disabled {
+  background-color: rgb(200, 200, 200) !important;
+  color: rgb(220, 220, 220) !important;
+  border: none !important;
+}
+.update-profile-form .invalid-input {
+  border: 2px solid rgb(255, 0, 0) !important;
+}
+.update-profile-form .valid-input {
+  border: 2px solid rgb(11, 212, 11) !important;
+}
+.update-profile-form__show-error {
+  margin: 2% 0 0 0;
+  padding: 0.15% 0.15% 0.15% 0.25%;
+  width: 100%;
+  border-radius: 0.35em;
+  background: rgb(252, 178, 162);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 0, 0);
+  line-height: 1.2;
+  font-size: 0.363em;
+}
+.update-profile-form__show-instructions {
+  margin: 0 0 0 5%;
+  padding: 0.15% 0.15% 0.15% 0.25%;
+  width: 36%;
+  border-radius: 0.35em;
+  background: rgb(116, 134, 150);
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  font-size: 0.363em;
+}
+@media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
+  .update-profile-form {
+    font-size: 1.75rem;
+  }
+  .update-profile-form__button--close-form {
+    padding: 0.1rem;
+    height: 1.25rem;
+  }
+  .update-profile-form__label-group {
+    width: 80%;
+  }
+  .update-profile-form__label {
+    width: 30%;
+  }
+  .update-profile-form__name-group {
+    width: 80%;
+  }
+  .update-profile-form__name-floating-label {
+    top: 0.6rem;
+    left: 0.75rem;
+  }
+  .update-profile-form__floating-label-group {
+    width: 80%;
+  }
+  .update-profile-form__floating-label {
+    top: 0.6rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .update-profile-form__name-floating-label, input:not(:focus):valid ~ .update-profile-form__name-floating-label, input:is(.invalid-input, .valid-input) ~ .update-profile-form__name-floating-label, input:focus ~ .update-profile-form__floating-label, input:not(:focus):valid ~ .update-profile-form__floating-label, input:is(.invalid-input, .valid-input) ~ .update-profile-form__floating-label, textarea:focus ~ .update-profile-form__floating-label, textarea:not(:focus):valid ~ .update-profile-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .update-profile-form__floating-label {
+    top: -0.4rem;
+  }
+  .update-profile-form__user-type {
+    width: 40%;
+  }
+  .update-profile-form__button {
+    height: 2.5rem;
+  }
+  .update-profile-form__show-instructions {
+    width: 80%;
+  }
+}
+@media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+  .update-profile-form {
+    font-size: 1.5rem;
+  }
+  .update-profile-form__button--close-form {
+    padding: 0.1rem;
+    height: 1.1rem;
+  }
+  .update-profile-form__label-group {
+    width: 90%;
+  }
+  .update-profile-form__label {
+    width: 25%;
+  }
+  .update-profile-form__name-group {
+    width: 90%;
+  }
+  .update-profile-form__name-floating-label {
+    top: 0.6rem;
+    left: 0.75rem;
+  }
+  .update-profile-form__floating-label-group {
+    width: 90%;
+  }
+  .update-profile-form__floating-label {
+    top: 0.6rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .update-profile-form__name-floating-label, input:not(:focus):valid ~ .update-profile-form__name-floating-label, input:is(.invalid-input, .valid-input) ~ .update-profile-form__name-floating-label, input:focus ~ .update-profile-form__floating-label, input:not(:focus):valid ~ .update-profile-form__floating-label, input:is(.invalid-input, .valid-input) ~ .update-profile-form__floating-label, textarea:focus ~ .update-profile-form__floating-label, textarea:not(:focus):valid ~ .update-profile-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .update-profile-form__floating-label {
+    top: -0.4rem;
+  }
+  .update-profile-form__user-type {
+    width: 40%;
+  }
+  .update-profile-form__button {
+    height: 2.15rem;
+  }
+  .update-profile-form__show-instructions {
+    width: 80%;
+  }
+}
+@media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+  .update-profile-form {
+    font-size: 1rem;
+  }
+  .update-profile-form__button--close-form {
+    padding: 0.1rem;
+    height: 0.9rem;
+  }
+  .update-profile-form__label-group {
+    width: 90%;
+  }
+  .update-profile-form__label {
+    width: 40%;
+  }
+  .update-profile-form__name-group {
+    width: 90%;
+  }
+  .update-profile-form__name-floating-label {
+    top: 0.6rem;
+    left: 0.5rem;
+  }
+  .update-profile-form__floating-label-group {
+    width: 90%;
+  }
+  .update-profile-form__floating-label {
+    top: 0.6rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .update-profile-form__name-floating-label, input:not(:focus):valid ~ .update-profile-form__name-floating-label, input:is(.invalid-input, .valid-input) ~ .update-profile-form__name-floating-label, input:focus ~ .update-profile-form__floating-label, input:not(:focus):valid ~ .update-profile-form__floating-label, input:is(.invalid-input, .valid-input) ~ .update-profile-form__floating-label, textarea:focus ~ .update-profile-form__floating-label, textarea:not(:focus):valid ~ .update-profile-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .update-profile-form__floating-label {
+    top: -0.2rem;
+  }
+  .update-profile-form__user-type {
+    width: 40%;
+  }
+  .update-profile-form__button {
+    height: 2rem;
+  }
+  .update-profile-form__button--delete {
+    margin-left: 37%;
+    width: 30%;
+  }
+  .update-profile-form__show-instructions {
+    width: 90%;
+  }
+}
+@media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+  .update-profile-form {
+    font-size: 1rem;
+  }
+  .update-profile-form__button--close-form {
+    padding: 0.1rem;
+    height: 0.6rem;
+  }
+  .update-profile-form__label-group {
+    width: 90%;
+  }
+  .update-profile-form__label {
+    width: 40%;
+  }
+  .update-profile-form__name-group {
+    width: 90%;
+  }
+  .update-profile-form__name-floating-label {
+    top: 0.6rem;
+    left: 0.5rem;
+  }
+  .update-profile-form__floating-label-group {
+    width: 90%;
+  }
+  .update-profile-form__floating-label {
+    top: 0.6rem;
+    left: 0.5rem;
+  }
+  input:focus ~ .update-profile-form__name-floating-label, input:not(:focus):valid ~ .update-profile-form__name-floating-label, input:is(.invalid-input, .valid-input) ~ .update-profile-form__name-floating-label, input:focus ~ .update-profile-form__floating-label, input:not(:focus):valid ~ .update-profile-form__floating-label, input:is(.invalid-input, .valid-input) ~ .update-profile-form__floating-label, textarea:focus ~ .update-profile-form__floating-label, textarea:not(:focus):valid ~ .update-profile-form__floating-label, textarea:is(.invalid-input, .valid-input) ~ .update-profile-form__floating-label {
+    top: -0.2rem;
+  }
+  .update-profile-form__user-type {
+    width: 40%;
+  }
+  .update-profile-form__user-type-warning {
+    font-size: 0.45rem;
+  }
+  .update-profile-form__button {
+    height: 1.5rem;
+  }
+  .update-profile-form__button--delete {
+    margin-left: 30%;
+    width: 36%;
+  }
+  .update-profile-form__show-instructions {
+    width: 90%;
+  }
+}/*# sourceMappingURL=UpdateProfileForm.css.map */

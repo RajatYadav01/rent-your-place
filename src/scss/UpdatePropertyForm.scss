@@ -1,0 +1,416 @@
+.update-property-form {
+    margin: 1% 0 0 10%;
+    width: 80%;
+    background-color: rgba(230, 230, 230, 0.5);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.75rem; 
+    font-family: 'Inter', sans-serif;
+
+    input:focus, textarea:focus {
+        outline: none;
+    }
+    
+    :focus::placeholder {
+        color: transparent;
+    }
+    
+    ::placeholder {
+        color: rgba(93, 93, 93, 0.7);
+        font-weight: 300;
+        font-size: 0.363em;
+    }
+
+    &__heading {
+        display: inline-block;
+        margin: 1.5% 0 1.5% 10%;
+        width: 80%;
+        height: 6%;
+        color: rgb(100, 100, 100);
+        text-align: center;
+        font-weight: 500;
+        font-size: 1em;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    &__button--close-form {
+        display: inline-block;
+        margin: 0.5% 0 1.5% 2%;
+        padding: 0.5rem;
+        width: 5%;
+        height: 2.5rem;
+        cursor: pointer;
+    }
+
+    &__floating-label-group {
+        position: relative;
+        margin: 1% auto 1% auto;
+        width: 70%;
+    }
+    
+    &__floating-label {
+        position: absolute;
+        top: 1.75rem;
+        left: 1%;
+        pointer-events: none;
+        color: rgba(93, 93, 93, 0.7);
+        font-weight: 300;
+        font-size: 0.363em;
+        transition: 0.2s ease all;
+    }
+
+    &__rent-and-currency-unit-group {
+        position: relative;
+        margin: 1% auto 1% auto;
+        width: 70%;
+    }
+
+    &__rent-label-group {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        width: 55%;
+    }
+
+    &__label-group {
+        position: relative;
+        display: inline-block;
+        margin: 0 0 0 2%;
+        width: 43%;
+    }
+
+    &__label {
+        margin: 0 2% 0 0;
+        width: 40%;
+        pointer-events: none;
+        color: rgba(93, 93, 93, 0.7);
+        font-weight: 300;
+        font-size: 0.363em;
+    }
+    
+    input:focus ~ &__floating-label, input:not(:focus):valid ~ &__floating-label, input:is(.invalid-input, .valid-input) ~ &__floating-label, textarea:focus ~ &__floating-label, textarea:not(:focus):valid ~ &__floating-label, textarea:is(.invalid-input, .valid-input) ~ &__floating-label {
+        top: -0.05rem;
+        background-color: rgb(240, 240, 240);
+        opacity: 1;
+        font-size: 0.29em;
+    }
+
+    &__country {
+        margin: 0 auto 0 auto;
+        padding: 1% 1% 1% 1%;
+        width: 100%;
+        height: 8%;
+        border: 0.1rem solid rgb(124, 137, 147);
+        border-radius: 0.5rem;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        font-size: 0.55em;
+    }
+
+    &__place {
+        margin: 0 auto 0 auto;
+        padding: 1% 1% 1% 1%;
+        width: 100%;
+        height: 8%;
+        border: 0.1rem solid rgb(124, 137, 147);
+        border-radius: 0.5rem;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        font-size: 0.55em;
+    }
+    
+    &__total-area {
+        margin: 0 auto 0 auto;
+        padding: 1% 1% 1% 1%;
+        width: 100%;
+        height: 8%;
+        border: 0.1rem solid rgb(124, 137, 147);
+        border-radius: 0.5rem;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        font-size: 0.55em;
+    }
+    
+    &__number-of-bedrooms {
+        margin: 0 auto 0 auto;
+        padding: 1% 1% 1% 1%;
+        width: 100%;
+        height: 8%;
+        border: 0.1rem solid rgb(124, 137, 147);
+        border-radius: 0.5rem;
+        background-color: rgb(255, 255, 255);
+        line-height: 1.2;
+        font-size: 0.55em;
+    }
+    
+    &__number-of-bathrooms {
+        margin: 0 auto 0 auto;
+        padding: 1% 1% 1% 1%;
+        width: 100%;
+        height: 8%;
+        border: 0.1rem solid rgb(124, 137, 147);
+        border-radius: 0.5rem;
+        background-color: rgb(255, 255, 255);
+        line-height: 1.2;
+        font-size: 0.55em;
+    }
+    
+    &__nearby-landmark {
+        margin: 0 auto 0 auto;
+        padding: 1% 1% 1% 1%;
+        width: 100%;
+        height: 8%;
+        background-color: rgb(255, 255, 255);
+        border: 0.1rem solid rgb(124, 137, 147);
+        border-radius: 0.5rem;
+        line-height: 1.2;
+        font-size: 0.55em;
+    }
+
+    &__monthly-rent {
+        margin: 0 auto 0 auto;
+        padding: 2%;
+        width: 100%;
+        height: 8%;
+        background-color: rgb(255, 255, 255);
+        border: 0.1rem solid rgb(124, 137, 147);
+        border-radius: 0.5rem;
+        line-height: 1.2;
+        font-size: 0.55em;
+    }
+
+    &__currency-unit {
+        margin: 0 auto 0 auto;
+        padding: 2%;
+        width: 58%;
+        height: 8%;
+        border: 0.1rem solid rgb(124, 137, 147);
+        border-radius: 0.5rem;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        font-size: 0.55em;
+    }
+    
+    &__place:hover, &__total-area:hover, &__number-of-bedrooms:hover, &__number-of-bathrooms:hover, &__nearby-landmark:hover {
+        opacity: 1;
+        box-shadow: 0 10px 6px -6px rgb(155, 155, 155);
+    }
+    
+    &__place:focus, &__place:active, &__total-area:focus, &__total-area:active, &__number-of-bedrooms:focus, &__number-of-bedrooms:active, &__number-of-bathrooms:focus, &__number-of-bathrooms:active, &__nearby-landmark:focus, &__nearby-landmark:active {
+        opacity: 1;
+        box-shadow: 0 2.8px 2.2px 0 rgba(0, 0, 0, 0.034), 0 6.7px 5.3px 0 rgba(0, 0, 0, 0.048), 0 12.5px 10px 0 rgba(0, 0, 0, 0.06), 0 22.3px 17.9px 0 rgba(0, 0, 0, 0.072), 0 41.8px 33.4px 0 rgba(0, 0, 0, 0.086), 0 100px 80px 0 rgba(0, 0, 0, 0.12);
+    }
+    
+    &__button--submit {
+        overflow: hidden;
+        position: relative;
+        margin: 2% 0 2% 40%;
+        padding: 0.5% 1% 0.5% 1%;
+        width: 23%;
+        height: 4rem;
+        background-color: rgb(71, 157, 255);
+        color: rgb(241, 245, 247);
+        text-align: center;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+        border: 0.1rem outset rgb(71, 157, 255);
+        border-radius: 2.5rem;
+        font-size: 0.727em;
+        transition: letter-spacing 0.2s, box-shadow 0.1s, transform 0.1s, background-color 0.2s ease-out;
+    }
+    
+    &__button--submit:hover:not([disabled]) {
+        letter-spacing: 0.05em;
+    }
+    
+    &__button--submit:active:not([disabled]) {
+        transform: translateY(0.1rem);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+    }
+    
+    &__show-error {
+        margin: 2% 0 0 0 ;
+        padding: 0.15% 0.15% 0.15% 0.25%;
+        width: 100%;
+        border-radius: 0.35em;
+        background: rgb(252, 178, 162);
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(255, 0, 0);
+        line-height: 1.2;
+        font-size: 0.363em;
+    }
+    
+    &__show-instructions {
+        margin: 1% auto 1% auto;;
+        padding: 0.15% 0.15% 0.15% 0.25%;
+        width: 70%;
+        border-radius: 0.35em;
+        background: rgb(116, 134, 150);
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        font-size: 0.363em;
+    }
+    
+    .button-disabled {
+        background-color: rgb(200, 200, 200) !important;
+        color: rgb(220, 220, 220) !important;
+        border: none !important;
+    }
+    
+    .invalid-input {
+        border: 2px solid rgb(255, 0, 0) !important;
+    }
+    
+    .valid-input {
+        border: 2px solid rgb(11, 212, 11) !important;
+    }
+    
+    @media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
+        font-size: 1.75rem;
+
+        &__button--close-form {
+            padding: 0.1rem;
+            height: 1.25rem;
+        }
+
+        &__floating-label-group, &__rent-and-currency-unit-group {
+            width: 80%;
+        }
+
+        &__floating-label {
+            top: 0.75rem;
+            left: 0.75rem;
+        }
+
+        input:focus ~ &__floating-label, input:not(:focus):valid ~ &__floating-label, input:is(.invalid-input, .valid-input) ~ &__floating-label, textarea:focus ~ &__floating-label, textarea:not(:focus):valid ~ &__floating-label, textarea:is(.invalid-input, .valid-input) ~ &__floating-label {
+            top: -0.05rem;
+        }
+
+        &__button--submit {
+            height: 2.5rem;
+        }
+
+        &__show-instructions {
+            width: 80%;
+        }
+    }
+
+    @media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+        font-size: 1.5rem;
+
+        &__button--close-form {
+            padding: 0.1rem;
+            height: 1.1rem;
+        }
+
+        &__floating-label-group, &__rent-and-currency-unit-group {
+            width: 90%;
+        }
+
+        &__rent-label-group {
+            width: 53%;
+        }
+
+        &__label-group {
+            width: 45%;
+        }
+
+        &__floating-label {
+            top: 0.8rem;
+            left: 0.5rem;
+        }
+
+        input:focus ~ &__floating-label, input:not(:focus):valid ~ &__floating-label, input:is(.invalid-input, .valid-input) ~ &__floating-label, textarea:focus ~ &__floating-label, textarea:not(:focus):valid ~ &__floating-label, textarea:is(.invalid-input, .valid-input) ~ &__floating-label {
+            top: -0.05rem;
+        }
+
+        &__button--submit {
+            height: 2.15rem;
+        }
+
+        &__show-instructions {
+            width: 80%;
+            font-size: 0.6rem;
+        }
+    }
+
+    @media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+        font-size: 1rem;
+
+        &__button--close-form {
+            padding: 0.1rem;
+            height: 0.9rem;
+        }
+
+        &__floating-label-group, &__rent-and-currency-unit-group {
+            width: 90%;
+        }
+
+        &__rent-label-group {
+            width: 53%;
+        }
+
+        &__label-group {
+            width: 45%;
+        }
+
+        &__floating-label {
+            top: 0.6rem;
+            left: 0.5rem;
+        }
+
+        input:focus ~ &__floating-label, input:not(:focus):valid ~ &__floating-label, input:is(.invalid-input, .valid-input) ~ &__floating-label, textarea:focus ~ &__floating-label, textarea:not(:focus):valid ~ &__floating-label, textarea:is(.invalid-input, .valid-input) ~ &__floating-label {
+            top: -0.02rem;
+        }
+
+        &__button--submit {
+            height: 2rem;
+        }
+
+        &__show-instructions {
+            width: 90%;
+        }
+    }
+
+    @media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+        font-size: 1rem;
+
+        &__button--close-form {
+            padding: 0.1rem;
+            height: 0.6rem;
+        }
+
+        &__floating-label-group, &__rent-and-currency-unit-group {
+            width: 90%;
+        }
+
+        &__rent-label-group {
+            width: 37%;
+        }
+
+        &__label-group {
+            width: 61%;
+        }
+
+        &__floating-label {
+            top: 0.6rem;
+            left: 0.5rem;
+        }
+
+        input:focus ~ &__floating-label, input:not(:focus):valid ~ &__floating-label, input:is(.invalid-input, .valid-input) ~ &__floating-label, textarea:focus ~ &__floating-label, textarea:not(:focus):valid ~ &__floating-label, textarea:is(.invalid-input, .valid-input) ~ &__floating-label {
+            top: -0.01rem;
+        }
+
+        &__button--submit {
+            padding-top: 0.1rem;
+            height: 1.5rem;
+        }
+
+        &__show-instructions {
+            width: 90%;
+        }
+    }
+}

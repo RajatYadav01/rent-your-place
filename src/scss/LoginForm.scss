@@ -1,0 +1,238 @@
+.login-form {
+    margin: 5% 0 5% 0;
+    width: 100%;
+    height: 60%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.65em; 
+    font-family: 'Inter', sans-serif;
+
+    input:focus, textarea:focus {
+        outline: none;
+    }
+    
+    :focus::placeholder {
+        color: transparent;
+    }
+    
+    ::placeholder {
+        color: rgba(93, 93, 93, 0.7);
+        font-weight: 300;
+        font-size: 0.6em;
+    }
+    
+    &__floating-label-group {
+        position: relative;
+        margin: 4% 0 4% 0;
+        width: 100%;
+        height: 12%;
+    }
+    
+    &__floating-label {
+        position: absolute;
+        top: 1.1rem;
+        left: 1rem;
+        pointer-events: none;
+        color: rgba(93, 93, 93, 0.7);
+        font-weight: 300;
+        font-size: 0.55em;
+        transition: 0.2s ease all;
+    }
+    
+    input:focus ~ &__floating-label, input:not(:focus):valid ~ &__floating-label, input:is(.invalid-input, .valid-input) ~ &__floating-label, textarea:focus ~ &__floating-label, textarea:not(:focus):valid ~ &__floating-label, textarea:is(.invalid-input, .valid-input) ~ &__floating-label {
+        top: -0.65rem;
+        background-color: rgb(240, 240, 240);
+        opacity: 1;
+        font-size: 0.45em;
+    }
+
+    &__email-address {
+        padding: 1% 1% 1% 1%;
+        width: 51%;
+        height: 10%;
+        border: 0.1rem solid rgb(124, 137, 147);
+        border-radius: 0.5rem;
+        background-color: rgb(255, 255, 255);
+        font-size: 0.8em;
+    }
+    
+    &__password {
+        padding: 1% 1% 1% 1%;
+        width: 51%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        border: 0.1rem solid rgb(124, 137, 147);
+        border-radius: 0.5rem;
+        font-size: 0.8em;
+    }
+    
+    &__email-address:hover, &__password:hover {
+        opacity: 1;
+        box-shadow: 0 10px 6px -6px rgb(155, 155, 155);
+    }
+    
+    &__email-address:focus, &__email-address:active, &__password:focus, &__password:active {
+        opacity: 1;
+        box-shadow: 0 2.8px 2.2px 0 rgba(0, 0, 0, 0.034), 0 6.7px 5.3px 0 rgba(0, 0, 0, 0.048), 0 12.5px 10px 0 rgba(0, 0, 0, 0.06), 0 22.3px 17.9px 0 rgba(0, 0, 0, 0.072), 0 41.8px 33.4px 0 rgba(0, 0, 0, 0.086), 0 100px 80px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &__forgot-password {
+        display: block;
+        margin: 2% 0 0 1%;
+        width: 20%;
+        text-decoration: none;
+        color: rgb(45, 158, 246);
+        font-size: 0.9em;
+        font-family: 'Raleway', sans-serif;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__password-visibility-icon {
+        margin: 0 0 0 1%;
+        font-size: 0.75em;
+        cursor: pointer;
+    }
+    
+    &__button--login {
+        overflow: hidden;
+        position: relative;
+        margin: 3% 0 0 40%;
+        padding: 0.5% 1% 0.5% 1%;
+        width: 23%;
+        height: 3.5rem;
+        background-color: rgb(71, 157, 255);
+        color: rgb(241, 245, 247);
+        text-align: center;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+        border: 0.1rem outset rgb(71, 157, 255);
+        border-radius: 2.5rem;
+        line-height: 1.5;
+        font-size: 1.11em;
+        transition: letter-spacing 0.2s, box-shadow 0.1s, transform 0.1s, background-color 0.2s ease-out;
+    }
+    
+    &__button--login:hover:not([disabled]) {
+        letter-spacing: 0.1em;
+    }
+    
+    &__button--login:active:not([disabled]) {
+        transform: translateY(0.1rem);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+    }
+    
+    &__show-error {
+        margin: 2% 0 0 0 ;
+        padding: 0.15% 0.15% 0.15% 0.25%;
+        width: 100%;
+        border-radius: 0.35em;
+        background: rgb(252, 178, 162);
+        border: 2px solid rgb(255, 0, 0);
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        font-size: 0.55em;
+    }
+
+    .button-disabled {
+        background-color: rgb(200, 200, 200) !important;
+        color: rgb(220, 220, 220) !important;
+        border: none !important;
+    }
+    
+    .invalid-input {
+        border: 2px solid rgb(255, 0, 0) !important;
+    }
+    
+    .valid-input {
+        border: 2px solid rgb(11, 212, 11) !important;
+    }
+
+    @media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
+        &__floating-label {
+            top: 0.75rem;
+            left: 0.5rem;
+        }
+
+        input:focus ~ &__floating-label, input:not(:focus):valid ~ &__floating-label, input:is(.invalid-input, .valid-input) ~ &__floating-label, textarea:focus ~ &__floating-label, textarea:not(:focus):valid ~ &__floating-label, textarea:is(.invalid-input, .valid-input) ~ &__floating-label {
+            top: -0.45rem;
+        }
+    
+        &__button--login {
+            padding-top: 0.25rem;
+            height: 2.5rem;
+        }
+
+        &__show-error {
+            width: 100%;
+        }
+    }
+
+    @media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+        &__floating-label {
+            top: 0.6rem;
+            left: 0.5rem;
+        }
+
+        input:focus ~ &__floating-label, input:not(:focus):valid ~ &__floating-label, input:is(.invalid-input, .valid-input) ~ &__floating-label, textarea:focus ~ &__floating-label, textarea:not(:focus):valid ~ &__floating-label, textarea:is(.invalid-input, .valid-input) ~ &__floating-label {
+            top: -0.35rem;
+        }
+
+        &__button--login {
+            padding-top: 0.1rem;
+            height: 2rem;
+        }
+
+        &__show-error {
+            width: 100%;
+        }
+    }
+
+    @media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+        &__floating-label {
+            top: 0.55rem;
+            left: 0.6rem;
+        }
+
+        input:focus ~ &__floating-label, input:not(:focus):valid ~ &__floating-label, input:is(.invalid-input, .valid-input) ~ &__floating-label, textarea:focus ~ &__floating-label, textarea:not(:focus):valid ~ &__floating-label, textarea:is(.invalid-input, .valid-input) ~ &__floating-label {
+            top: -0.35rem;
+        }
+
+        &__forgot-password {
+            width: 30%;
+        }
+
+        &__button--login {
+            padding-top: 0.1rem;
+            height: 2rem;
+        }
+
+        &__show-error {
+            width: 100%;
+        }
+    }
+
+    @media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+        &__floating-label {
+            top: 0.4rem;
+            left: 0.5rem;
+        }
+
+        input:focus ~ &__floating-label, input:not(:focus):valid ~ &__floating-label, input:is(.invalid-input, .valid-input) ~ &__floating-label, textarea:focus ~ &__floating-label, textarea:not(:focus):valid ~ &__floating-label, textarea:is(.invalid-input, .valid-input) ~ &__floating-label {
+            top: -0.2rem;
+        }
+
+        &__forgot-password {
+            width: 30%;
+        }
+
+        &__button--login {
+            height: 2rem;
+        }
+
+        &__show-error {
+            width: 100%;
+        }
+    }
+}

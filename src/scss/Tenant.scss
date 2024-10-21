@@ -1,0 +1,47 @@
+.tenant {
+    flex: 1 0 auto;
+    margin: 0;
+    padding: 4.5rem 0 0 0;
+    width: 100%;
+    background-color: rgb(241, 251, 255);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+
+    &__form-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    &__show-error {
+        margin: 2% 0 0 0 ;
+        padding: 0.15% 0.15% 0.15% 0.25%;
+        width: 100%;
+        border-radius: 0.35em;
+        background: rgb(252, 178, 162);
+        border: 2px solid rgb(255, 0, 0);
+        color: rgb(0, 0, 0);
+        line-height: 1.2;
+        font-size: 1em;
+    }
+
+    @media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
+        padding-top: 4rem;
+    }
+
+    @media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+        padding-top: 3.5rem;
+    }
+
+    @media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+        padding-top: 3rem;
+    }
+
+    @media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+        padding-top: 2.5rem;
+    }
+}
