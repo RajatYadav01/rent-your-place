@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rent-your-place/static/css/main.f8789477.css",
-    "main.js": "/rent-your-place/static/js/main.db695eb3.js",
+    "main.js": "/rent-your-place/static/js/main.5dcd0ea1.js",
     "static/js/453.d60ac6ca.chunk.js": "/rent-your-place/static/js/453.d60ac6ca.chunk.js",
     "static/media/bootstrap-icons.woff?": "/rent-your-place/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/inter-v18-latin_latin-ext-800italic.ttf": "/rent-your-place/static/media/inter-v18-latin_latin-ext-800italic.434cc829739191ebfc00.ttf",
@@ -218,11 +218,11 @@
     "static/media/poppins-v21-latin_latin-ext-100.woff2": "/rent-your-place/static/media/poppins-v21-latin_latin-ext-100.c4093a3a79efa85b26b9.woff2",
     "index.html": "/rent-your-place/index.html",
     "main.f8789477.css.map": "/rent-your-place/static/css/main.f8789477.css.map",
-    "main.db695eb3.js.map": "/rent-your-place/static/js/main.db695eb3.js.map",
+    "main.5dcd0ea1.js.map": "/rent-your-place/static/js/main.5dcd0ea1.js.map",
     "453.d60ac6ca.chunk.js.map": "/rent-your-place/static/js/453.d60ac6ca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f8789477.css",
-    "static/js/main.db695eb3.js"
+    "static/js/main.5dcd0ea1.js"
   ]
 }
