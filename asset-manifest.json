@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/github.io/rent-your-place/static/css/main.7bf47e49.css",
-    "main.js": "/github.io/rent-your-place/static/js/main.62bcc19e.js",
+    "main.js": "/github.io/rent-your-place/static/js/main.0328e416.js",
     "static/js/453.d60ac6ca.chunk.js": "/github.io/rent-your-place/static/js/453.d60ac6ca.chunk.js",
     "static/media/bootstrap-icons.woff?": "/github.io/rent-your-place/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/inter-v18-latin_latin-ext-800italic.ttf": "/github.io/rent-your-place/static/media/inter-v18-latin_latin-ext-800italic.434cc829739191ebfc00.ttf",
@@ -218,11 +218,11 @@
     "static/media/poppins-v21-latin_latin-ext-100.woff2": "/github.io/rent-your-place/static/media/poppins-v21-latin_latin-ext-100.c4093a3a79efa85b26b9.woff2",
     "index.html": "/github.io/rent-your-place/index.html",
     "main.7bf47e49.css.map": "/github.io/rent-your-place/static/css/main.7bf47e49.css.map",
-    "main.62bcc19e.js.map": "/github.io/rent-your-place/static/js/main.62bcc19e.js.map",
+    "main.0328e416.js.map": "/github.io/rent-your-place/static/js/main.0328e416.js.map",
     "453.d60ac6ca.chunk.js.map": "/github.io/rent-your-place/static/js/453.d60ac6ca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7bf47e49.css",
-    "static/js/main.62bcc19e.js"
+    "static/js/main.0328e416.js"
   ]
 }
