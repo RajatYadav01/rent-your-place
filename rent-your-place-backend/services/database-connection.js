@@ -1,8 +1,7 @@
 const {Pool, types} = require("pg");
-const { join } = require('path');
 const dotenv = require("dotenv");
 
-dotenv.config({ path: [".env.example", ".env"] });
+dotenv.config({ path: [".env.production", ".env.example", ".env"] });
 
 const pool = new Pool({
     host: process.env.DB_HOST,
