@@ -1,12 +1,14 @@
 # Rent Your Place
 
 ## Table of contents
-- [About](#about)
+- [Rent Your Place](#rent-your-place)
+  - [Table of contents](#table-of-contents)
+  - [About](#about)
     - [Overview](#overview)
     - [Key features](#key-features)
-- [Usage](#usage)
-- [Working](#working)
-- [Development](#development)
+  - [Usage](#usage)
+  - [Working](#working)
+  - [Development](#development)
     - [Requirements](#requirements)
     - [Setup](#setup)
 
@@ -22,7 +24,7 @@ The goal of this project is to help connect tenants and property owners. Tenants
 - Proper **pagination** is provided for viewing all the properties.
 
 ## Usage
-To use the project you can visit [RajatYadav01.github.io/rent-your-place](https://rajatyadav01.github.io/rent-your-place/) which hosts the projects's front end. The back end of project is hosted on [Render](https://render.com).
+To use the project you can visit [RajatYadav01.github.io/rent-your-place](https://rajatyadav01.github.io/rent-your-place/) which hosts the projects's front end. The back end of project is hosted on [Render](https://render.com) and the database is hosted on [Neon](https://neon.tech).
 
 ## Working
 All users can view all the properties posted and apply filters based on any attribute of the property. But to perform actions like **adding a property**, **updating a property**, clicking on the **Like** button, clicking on the **I'm interested** button, etc., the user needs to be registered.
