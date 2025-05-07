@@ -176,10 +176,10 @@ function LoginForm() {
         })();
         const passwordValidation = (() => { 
             if (loginFormState.password === "") {
-                dispatchErrorMessage({type: "password", payload: "Phone number cannot be empty."});
+                dispatchErrorMessage({type: "password", payload: "Password cannot be empty."});
                 dispatchPasswordInputStatus({type: "valid", payload: false});
             } else if (!passwordRegEx.test(loginFormState.password)) {
-                dispatchErrorMessage({type: "password", payload: "Invalid phone number."});
+                dispatchErrorMessage({type: "password", payload: "Invalid password."});
                 dispatchPasswordInputStatus({type: "valid", payload: false});
             }
         })();
