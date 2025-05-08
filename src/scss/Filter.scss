@@ -1,560 +1,566 @@
 .filter-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0 0 0;
+  padding: 0;
+  width: 100%;
+  height: 6.5rem;
+  font-size: 2.25rem;
+  font-family: "Manrope", sans-serif;
+
+  :focus::placeholder {
+    color: transparent;
+  }
+
+  ::placeholder {
+    color: rgba(93, 93, 93, 0.7);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8em;
+    font-family: "Inter", sans-serif;
+  }
+
+  &__main-filters {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    height: 75%;
+  }
+
+  &__heading {
+    flex: 0 1 auto;
+    margin: auto 1% auto 1%;
+    width: 8%;
+    height: 100%;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 0.1rem;
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 54, 126);
+    border-radius: 1.5rem;
+  }
+
+  &__label {
+    flex: 1 0 auto;
+    padding-top: 0.25rem;
+    width: 100%;
+    height: 50%;
+    text-align: left;
+    color: rgb(50, 50, 50);
+    font-size: 0.55em;
+    font-weight: 400;
+  }
+
+  &__search {
+    flex: 1 0 auto;
+    padding: 0.15rem;
+    width: 100%;
+    height: 50%;
+    border-radius: 0.25rem;
+    font-size: 0.44em;
+    font-weight: 400;
+  }
+
+  &__country {
     display: flex;
     flex-direction: column;
-    margin: 2% 0 0 0;
-    padding: 0;
+    flex: 1 1 auto;
+    margin: 0 1% 0 1%;
+    width: 7%;
+    height: 100%;
+  }
+
+  &__place {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0 1% 0 1%;
+    width: 7%;
+    height: 100%;
+  }
+
+  &__area {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0 1% 0 1%;
+    width: 13%;
+    height: 100%;
+  }
+
+  &__area-search-container {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 6.5rem;
-    font-size: 2.25rem;
-    font-family: 'Manrope', sans-serif;
-    
-    :focus::placeholder {
-        color: transparent;
-    }
-    
-    ::placeholder {
-        color: rgba(93, 93, 93, 0.7);
-        font-style: normal;
-        font-weight: 300;
-        font-size: 0.8em;
-        font-family: 'Inter', sans-serif;
-    }
+    height: 50%;
+    border-radius: 0.25rem;
+  }
 
-    &__main-filters {
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        width: 100%;
-        height: 75%;
-    }
+  &__area-search {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0.15rem;
+    width: 47%;
+    height: 100%;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
 
+  &__separator {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0.1rem;
+    width: 6%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.55em;
+    font-weight: 400;
+  }
+
+  &__number-of-bedrooms {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0 1% 0 1%;
+    width: 11%;
+    height: 100%;
+  }
+
+  &__number-of-bathrooms {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0 1% 0 1%;
+    width: 11%;
+    height: 100%;
+  }
+
+  &__nearby-landmark {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0 1% 0 1%;
+    width: 10%;
+    height: 100%;
+  }
+
+  &__rent-and-currency-unit-container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin: 0 1% 0 1%;
+    width: 17%;
+    height: 100%;
+  }
+
+  &__rent {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0 1% 0 1%;
+    width: 73%;
+    height: 100%;
+  }
+
+  &__rent-search-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    border-radius: 0.25rem;
+  }
+
+  &__rent-search {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0.15rem;
+    width: 47%;
+    height: 100%;
+    border-radius: 0.25rem;
+    font-size: 0.44em;
+    font-weight: 400;
+  }
+
+  &__currency-unit {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    margin: 0 1% 0 1%;
+    width: 23%;
+    height: 50%;
+    font-size: 0.44em;
+    font-weight: 400;
+  }
+
+  &__other-filters {
+    display: flex;
+    flex-direction: row;
+    margin: 1% 0 0 0;
+    width: 55%;
+    height: 24%;
+  }
+
+  &__user-properties {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 1% 0 1%;
+    width: 20%;
+    height: 100%;
+  }
+
+  &__user-properties-checkbox {
+    flex: 1 1 auto;
+    margin: 0 1.5% 0 1.5%;
+    width: 4%;
+    height: 100%;
+  }
+
+  &__user-properties-label {
+    flex: 1 1 auto;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 1.5% 0 1.5%;
+    width: 90%;
+    height: 100%;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: "Manrope", sans-serif;
+  }
+
+  &__liked-properties {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 1% 0 1%;
+    width: 20%;
+    height: 100%;
+  }
+
+  &__liked-properties-checkbox {
+    flex: 1 1 auto;
+    margin: 0 1.5% 0 1.5%;
+    width: 4%;
+    height: 100%;
+  }
+
+  &__liked-properties-label {
+    flex: 1 1 auto;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 1.5% 0 1.5%;
+    width: 90%;
+    height: 100%;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: "Manrope", sans-serif;
+  }
+
+  @media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
     &__heading {
-        flex: 0 1 auto;
-        margin: auto 1% auto 1%;
-        width: 8%;
-        height: 100%;
-        text-align: center;
-        line-height: 2;
-        letter-spacing: 0.1rem;
-        font-size: 1em;
-        font-weight: 500;
-        color: rgb(255, 255, 255);
-        background-color: rgb(2, 54, 126);
-        border-radius: 1.5rem;
+      line-height: 2.15;
+      height: 70%;
+      font-size: 1.5rem;
     }
 
     &__label {
-        flex: 1 0 auto;
-        padding-top: 0.25rem;
-        width: 100%;
-        height: 50%;
-        text-align: left;
-        color: rgb(50, 50, 50);
-        font-size: 0.55em;
-        font-weight: 400;
+      font-size: 0.9rem;
     }
-    
+
     &__search {
-        flex: 1 0 auto;
-        padding: 0.15rem;
-        width: 100%;
-        height: 50%;
-        border-radius: 0.25rem;
-        font-size: 0.44em;
-        font-weight: 400;
+      font-size: 0.75rem;
+    }
+
+    &__area-search {
+      font-size: 0.75rem;
+    }
+
+    &__separator {
+      padding-top: 0.25rem;
+      font-size: 0.9rem;
+    }
+
+    &__user-properties-label,
+    &__liked-properties-label {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+    &__heading {
+      line-height: 2.75;
+      height: 60%;
+      font-size: 0.9rem;
+    }
+
+    &__label {
+      font-size: 0.75rem;
+    }
+
+    &__search {
+      font-size: 0.6rem;
+    }
+
+    &__area-search {
+      font-size: 0.6rem;
+    }
+
+    &__separator {
+      padding-top: 0.25rem;
+      font-size: 0.75rem;
+    }
+
+    &__user-properties-label,
+    &__liked-properties-label {
+      font-size: 0.75rem;
+    }
+  }
+
+  @media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+    width: 30%;
+    height: 31rem;
+
+    &__heading {
+      margin: 0 auto 0 auto;
+      width: 90%;
+      height: 10%;
+      line-height: 2.5;
+      font-size: 1rem;
+    }
+
+    &__main-filters {
+      flex-direction: column;
+      height: 85%;
+    }
+
+    &__label {
+      width: 100%;
+      font-size: 0.75rem;
+    }
+
+    &__search {
+      width: 100%;
+      font-size: 0.6rem;
     }
 
     &__country {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        margin: 0 1% 0 1%;
-        width: 7%;
-        height: 100%;
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 12%;
     }
-    
+
     &__place {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        margin: 0 1% 0 1%;
-        width: 7%;
-        height: 100%;
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 12%;
     }
-    
+
     &__area {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        margin: 0 1% 0 1%;
-        width: 13%;
-        height: 100%;
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 13%;
     }
-    
+
     &__area-search-container {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 50%;
-        border-radius: 0.25rem;
+      width: 100%;
     }
-    
+
     &__area-search {
-        flex: 1 1 auto;
-        margin: 0;
-        padding: 0.15rem;
-        width: 47%;
-        height: 100%;
-        border-radius: 0.25rem;
-        font-size: 1rem;
+      font-size: 0.6rem;
     }
-    
+
     &__separator {
-        flex: 1 1 auto;
-        margin: 0;
-        padding: 0.1rem;
-        width: 6%;
-        height: 100%;
-        text-align: center;
-        font-size: 0.55em;
-        font-weight: 400;
+      padding-top: 0.25rem;
+      font-size: 0.75rem;
     }
-    
+
     &__number-of-bedrooms {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        margin: 0 1% 0 1%;
-        width: 11%;
-        height: 100%;
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 12%;
     }
-    
+
     &__number-of-bathrooms {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        margin: 0 1% 0 1%;
-        width: 11%;
-        height: 100%;
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 12%;
     }
-    
+
     &__nearby-landmark {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        margin: 0 1% 0 1%;
-        width: 10%;
-        height: 100%;
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 12%;
     }
 
     &__rent-and-currency-unit-container {
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: row;
-        align-items: end;
-        margin: 0 1% 0 1%;
-        width: 17%;
-        height: 100%;
+      flex-direction: column;
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 13%;
     }
 
     &__rent {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        margin: 0 1% 0 1%;
-        width: 73%;
-        height: 100%;
+      width: 100%;
     }
 
-    &__rent-search-container {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 50%;
-        border-radius: 0.25rem;
-    }
-    
     &__rent-search {
-        flex: 1 1 auto;
-        margin: 0;
-        padding: 0.15rem;
-        width: 47%;
-        height: 100%;
-        border-radius: 0.25rem;
-        font-size: 0.44em;
-        font-weight: 400;
+      font-size: 0.6rem;
     }
 
     &__currency-unit {
-        flex: 1 1 auto;
-        display: flex;
-        align-items: center;
-        margin: 0 1% 0 1%;
-        width: 23%;
-        height: 50%;
-        font-size: 0.44em;
-        font-weight: 400;
+      margin-top: 1%;
+      width: 100%;
+      font-size: 0.6rem;
     }
 
     &__other-filters {
-        display: flex;
-        flex-direction: row;
-        margin: 1% 0 0 0;
-        width: 55%;
-        height: 24%;
+      flex-direction: column;
+      margin-top: 5%;
+      width: 100%;
+      height: 16%;
     }
 
-    &__user-properties {
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: row;
-        margin: 0 1% 0 1%;
-        width: 20%;
-        height: 100%;
+    &__user-properties,
+    &__liked-properties {
+      width: 100%;
+      height: 50%;
     }
 
     &__user-properties-checkbox {
-        flex: 1 1 auto;
-        margin: 0 1.5% 0 1.5%;
-        width: 4%;
-        height: 100%;
+      width: 4%;
     }
 
-    &__user-properties-label {
-        flex: 1 1 auto;
-        display: inline-flex;
-        align-items: center;
-        margin: 0 1.5% 0 1.5%;
-        width: 90%;
-        height: 100%;
-        font-size: 1.25rem;
-        font-weight: 400;
-        font-family: 'Manrope', sans-serif;
-    }
-
-    &__liked-properties {
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: row;
-        margin: 0 1% 0 1%;
-        width: 20%;
-        height: 100%;
-    }
-
-    &__liked-properties-checkbox {
-        flex: 1 1 auto;
-        margin: 0 1.5% 0 1.5%;
-        width: 4%;
-        height: 100%;
-    }
-
+    &__user-properties-label,
     &__liked-properties-label {
-        flex: 1 1 auto;
-        display: inline-flex;
-        align-items: center;
-        margin: 0 1.5% 0 1.5%;
-        width: 90%;
-        height: 100%;
-        font-size: 1.25rem;
-        font-weight: 400;
-        font-family: 'Manrope', sans-serif;
+      margin-left: 1%;
+      width: 95%;
+      font-size: 0.7rem;
+    }
+  }
+
+  @media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+    width: 30%;
+    height: 20rem;
+
+    &__heading {
+      margin: 0 auto 0 auto;
+      width: 90%;
+      height: 10%;
+      line-height: 2.5;
+      font-size: 0.6rem;
     }
 
-    @media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
-        &__heading {
-            line-height: 2.15;
-            height: 70%;
-            font-size: 1.5rem;
-        }
-        
-        &__label {
-            font-size: 0.9rem;
-        }
-        
-        &__search {
-            font-size: 0.75rem;
-        }
-        
-        &__area-search {
-            font-size: 0.75rem;
-        }
-        
-        &__separator {
-            padding-top: 0.25rem;
-            font-size: 0.9rem;
-        }
-
-        &__user-properties-label, &__liked-properties-label {
-            font-size: 0.9rem;
-        }
+    &__main-filters {
+      flex-direction: column;
+      height: 85%;
     }
 
-    @media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
-        &__heading {
-            line-height: 2.75;
-            height: 60%;
-            font-size: 0.9rem;
-        }
-        
-        &__label {
-            font-size: 0.75rem;
-        }
-        
-        &__search {
-            font-size: 0.6rem;
-        }
-        
-        &__area-search {
-            font-size: 0.6rem;
-        }
-        
-        &__separator {
-            padding-top: 0.25rem;
-            font-size: 0.75rem;
-        }
-
-        &__user-properties-label, &__liked-properties-label {
-            font-size: 0.75rem;
-        }
+    &__label {
+      width: 100%;
+      font-size: 0.4rem;
     }
 
-    @media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
-        width: 30%;
-        height: 31rem;
-
-        &__heading {
-            margin: 0 auto 0 auto;
-            width: 90%;
-            height: 10%;
-            line-height: 2.5;
-            font-size: 1rem;
-        }
-
-        &__main-filters {
-            flex-direction: column;
-            height: 85%;
-        }
-        
-        &__label {
-            width: 100%;
-            font-size: 0.75rem;
-        }
-        
-        &__search {
-            width: 100%;
-            font-size: 0.6rem;
-        }
-
-        &__country {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 12%;
-        }
-        
-        &__place {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 12%;
-        }
-        
-        &__area {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 13%;
-        }
-        
-        &__area-search-container {
-            width: 100%;
-        }
-        
-        &__area-search {
-            font-size: 0.6rem;
-        }
-        
-        &__separator {
-            padding-top: 0.25rem;
-            font-size: 0.75rem;
-        }
-        
-        &__number-of-bedrooms {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 12%;
-        }
-        
-        &__number-of-bathrooms {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 12%;
-        }
-        
-        &__nearby-landmark {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 12%;
-        }
-
-        &__rent-and-currency-unit-container {
-            flex-direction: column;
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 13%;
-        }
-
-        &__rent {
-            width: 100%;
-        }
-
-        &__rent-search {
-            font-size: 0.6rem;
-        }
-
-        &__currency-unit {
-            margin-top: 1%;
-            width: 100%;
-            font-size: 0.6rem;
-        }
-
-        &__other-filters {
-            flex-direction: column;
-            margin-top: 5%;
-            width: 100%;
-            height: 16%;
-        }
-
-        &__user-properties, &__liked-properties {
-            width: 100%;
-            height: 50%;
-        }
-
-        &__user-properties-checkbox {
-            width: 4%;
-        }
-
-        &__user-properties-label, &__liked-properties-label {
-            margin-left: 1%;
-            width: 95%;
-            font-size: 0.7rem;
-        }
+    &__search {
+      width: 100%;
+      font-size: 0.35rem;
     }
 
-    @media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
-        width: 30%;
-        height: 20rem;
-
-        &__heading {
-            margin: 0 auto 0 auto;
-            width: 90%;
-            height: 10%;
-            line-height: 2.5;
-            font-size: 0.6rem;
-        }
-
-        &__main-filters {
-            flex-direction: column;
-            height: 85%;
-        }
-        
-        &__label {
-            width: 100%;
-            font-size: 0.4rem;
-        }
-        
-        &__search {
-            width: 100%;
-            font-size: 0.35rem;
-        }
-
-        &__country {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 12%;
-        }
-        
-        &__place {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 12%;
-        }
-        
-        &__area {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 13%;
-        }
-        
-        &__area-search-container {
-            width: 100%;
-        }
-        
-        &__area-search {
-            font-size: 0.35rem;
-        }
-        
-        &__separator {
-            padding-top: 0.25rem;
-            font-size: 0.35rem;
-        }
-        
-        &__number-of-bedrooms {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 12%;
-        }
-        
-        &__number-of-bathrooms {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 12%;
-        }
-        
-        &__nearby-landmark {
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 12%;
-        }
-
-        &__rent-and-currency-unit-container {
-            flex-direction: column;
-            margin: 1% 0 1% 0;
-            width: 100%;
-            height: 13%;
-        }
-
-        &__rent {
-            width: 100%;
-        }
-
-        &__rent-search {
-            font-size: 0.35rem;
-        }
-
-        &__currency-unit {
-            margin-top: 1%;
-            width: 100%;
-            font-size: 0.35rem;
-        }
-
-        &__other-filters {
-            flex-direction: column;
-            margin-top: 5%;
-            width: 100%;
-            height: 12%;
-        }
-
-        &__user-properties, &__liked-properties {
-            width: 100%;
-            height: 50%;
-        }
-
-        &__user-properties-checkbox {
-            width: 4%;
-        }
-
-        &__user-properties-label, &__liked-properties-label {
-            margin-left: 1%;
-            width: 95%;
-            font-size: 0.35rem;
-        }
+    &__country {
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 12%;
     }
+
+    &__place {
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 12%;
+    }
+
+    &__area {
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 13%;
+    }
+
+    &__area-search-container {
+      width: 100%;
+    }
+
+    &__area-search {
+      font-size: 0.35rem;
+    }
+
+    &__separator {
+      padding-top: 0.25rem;
+      font-size: 0.35rem;
+    }
+
+    &__number-of-bedrooms {
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 12%;
+    }
+
+    &__number-of-bathrooms {
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 12%;
+    }
+
+    &__nearby-landmark {
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 12%;
+    }
+
+    &__rent-and-currency-unit-container {
+      flex-direction: column;
+      margin: 1% 0 1% 0;
+      width: 100%;
+      height: 13%;
+    }
+
+    &__rent {
+      width: 100%;
+    }
+
+    &__rent-search {
+      font-size: 0.35rem;
+    }
+
+    &__currency-unit {
+      margin-top: 1%;
+      width: 100%;
+      font-size: 0.35rem;
+    }
+
+    &__other-filters {
+      flex-direction: column;
+      margin-top: 5%;
+      width: 100%;
+      height: 12%;
+    }
+
+    &__user-properties,
+    &__liked-properties {
+      width: 100%;
+      height: 50%;
+    }
+
+    &__user-properties-checkbox {
+      width: 4%;
+    }
+
+    &__user-properties-label,
+    &__liked-properties-label {
+      margin-left: 1%;
+      width: 95%;
+      font-size: 0.35rem;
+    }
+  }
 }

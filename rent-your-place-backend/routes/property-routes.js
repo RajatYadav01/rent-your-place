@@ -10,7 +10,11 @@ router.get("/get-owner", propertyValidation, propertyController.getOwner);
 
 router.patch("/update", propertyValidation, propertyController.updateProperty);
 
-router.patch("/unlikeProperty", propertyValidation, propertyController.unlikeProperty);
+router.patch(
+  "/unlikeProperty",
+  propertyValidation,
+  propertyController.unlikeProperty
+);
 
 router.delete("/delete", propertyController.deleteProperty);
 

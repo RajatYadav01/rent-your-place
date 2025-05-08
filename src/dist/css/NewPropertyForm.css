@@ -7,7 +7,8 @@
   font-size: 2.75rem;
   font-family: "Inter", sans-serif;
 }
-.new-property-form input:focus, .new-property-form textarea:focus {
+.new-property-form input:focus,
+.new-property-form textarea:focus {
   outline: none;
 }
 .new-property-form :focus::-moz-placeholder {

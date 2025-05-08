@@ -7,7 +7,8 @@
   font-size: 2.75rem;
   font-family: "Inter", sans-serif;
 }
-.update-profile-form input:focus, .update-profile-form textarea:focus {
+.update-profile-form input:focus,
+.update-profile-form textarea:focus {
   outline: none;
 }
 .update-profile-form :focus::-moz-placeholder {

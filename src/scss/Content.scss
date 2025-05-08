@@ -1,103 +1,107 @@
 .content {
-    overflow: auto;
-    flex: 1 0 auto;
+  overflow: auto;
+  flex: 1 0 auto;
+  position: relative;
+  margin: 0;
+  padding: 4.5rem 0 0 0;
+  width: 100%;
+
+  &__hero-section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25rem;
+    content: "";
+    background-image: url("/src/landing-page-illustration.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+  }
+
+  &__hero-section {
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin: 0;
-    padding: 4.5rem 0 0 0;
     width: 100%;
+    height: 25rem;
+    font-size: 3.5rem;
+    font-family: "Manrope", sans-serif;
+  }
 
-    &__hero-section::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 25rem;
-        content: "";
-        background-image: url("/src/landing-page-illustration.svg");
-        background-repeat: no-repeat;
-        background-position: 100% 100%;
-        background-size: cover;
-    }
-    
+  &__first-heading {
+    z-index: 1;
+    margin: 4% 17.5% 0 2%;
+    width: 80%;
+    height: 10%;
+    vertical-align: top;
+    color: rgb(46, 51, 109);
+    font-weight: 500;
+    font-size: 1em;
+  }
+
+  &__second-heading {
+    z-index: 1;
+    margin: 2.5% 17.5% 0 2%;
+    width: 80%;
+    height: 10%;
+    vertical-align: top;
+    color: rgb(187, 103, 79);
+    font-weight: 500;
+    font-size: 1em;
+  }
+
+  &__third-heading {
+    z-index: 1;
+    margin: 2.5% 17.5% 0 2%;
+    width: 80%;
+    height: 10%;
+    vertical-align: top;
+    color: rgb(46, 51, 109);
+    font-weight: 500;
+    font-size: 1em;
+  }
+
+  @media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
+    padding-top: 4rem;
+
+    &__hero-section::before,
     &__hero-section {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin: 0;
-        width: 100%;
-        height: 25rem;
-        font-size: 3.5rem;
-        font-family: 'Manrope', sans-serif;
+      height: 18rem;
+      font-size: 2.1rem;
     }
-    
-    &__first-heading {
-        z-index: 1;
-        margin: 4% 17.5% 0 2%;
-        width: 80%;
-        height: 10%;
-        vertical-align: top;
-        color: rgb(46, 51, 109);
-        font-weight: 500;
-        font-size: 1em;
+  }
+
+  @media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+    padding-top: 3.5rem;
+
+    &__hero-section::before,
+    &__hero-section {
+      height: 14rem;
+      font-size: 1.75rem;
     }
-    
-    &__second-heading {
-        z-index: 1;
-        margin: 2.5% 17.5% 0 2%;
-        width: 80%;
-        height: 10%;
-        vertical-align: top;
-        color: rgb(187, 103, 79);
-        font-weight: 500;
-        font-size: 1em;
+  }
+
+  @media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+    padding-top: 3rem;
+
+    &__hero-section::before,
+    &__hero-section {
+      height: 11rem;
+      font-size: 1.25rem;
     }
+  }
 
-    &__third-heading {
-        z-index: 1;
-        margin: 2.5% 17.5% 0 2%;
-        width: 80%;
-        height: 10%;
-        vertical-align: top;
-        color: rgb(46, 51, 109);
-        font-weight: 500;
-        font-size: 1em;
+  @media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+    padding-top: 2.5rem;
+
+    &__hero-section::before,
+    &__hero-section {
+      height: 8rem;
+      font-size: 1rem;
     }
-
-    @media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
-        padding-top: 4rem;
-
-        &__hero-section::before, &__hero-section {
-            height: 18rem;
-            font-size: 2.1rem;
-        }
-    }
-
-    @media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
-        padding-top: 3.5rem;
-
-        &__hero-section::before, &__hero-section {
-            height: 14rem;
-            font-size: 1.75rem;
-        }
-    }
-
-    @media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
-        padding-top: 3rem;
-
-        &__hero-section::before, &__hero-section {
-            height: 11rem;
-            font-size: 1.25rem;
-        }
-    }
-
-    @media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
-        padding-top: 2.5rem;
-
-        &__hero-section::before, &__hero-section {
-            height: 8rem;
-            font-size: 1rem;
-        }
-    }
+  }
 }

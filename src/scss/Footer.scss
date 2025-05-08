@@ -1,97 +1,97 @@
 .footer {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0.5% 1% 0.5% 1%;
+  width: 100%;
+  height: 4.5rem;
+  background-color: rgb(119, 197, 239);
+  border-top: 1px solid rgb(226, 232, 240);
+
+  &__content {
     display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0.5% 1% 0.5% 1%;
+    flex-direction: row;
     width: 100%;
-    height: 4.5rem;
-    background-color: rgb(119, 197, 239);
-    border-top: 1px solid rgb(226, 232, 240);
+    height: 100%;
+    font-weight: 300;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+  }
+
+  &__text {
+    flex: 0 1 auto;
+    margin: 0;
+    width: 55%;
+    height: 100%;
+    text-align: right;
+    color: rgb(90, 90, 90);
+    font-size: 1em;
+  }
+
+  &__link {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 0.75rem;
+    padding: 0;
+    width: 20%;
+    height: 100%;
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+    line-height: 2.2;
+    font-size: 0.75em;
+  }
+
+  @media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
+    height: 4rem;
 
     &__content {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 100%; 
-        font-weight: 300;
-        font-size: 2rem;
-        font-family: 'Lato', sans-serif;
+      font-size: 1.75rem;
     }
-    
+
     &__text {
-        flex: 0 1 auto;
-        margin: 0;
-        width: 55%;
-        height: 100%;
-        text-align: right;
-        color: rgb(90, 90, 90);
-        font-size: 1em;
+      padding-top: 0.1rem;
+    }
+  }
+
+  @media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
+    height: 3.5rem;
+
+    &__content {
+      font-size: 1.5rem;
     }
 
-    &__link {
-        flex: 0 1 auto;
-        display: flex;
-        align-items: center;
-        margin: 0 0 0 0.75rem;
-        padding: 0;
-        width: 20%;
-        height: 100%;
-        color: rgb(90, 90, 90);
-        text-decoration: none;
-        line-height: 2.2;
-        font-size: 0.75em;
+    &__text {
+      padding-top: 0.25rem;
+    }
+  }
+
+  @media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
+    height: 3rem;
+
+    &__content {
+      font-size: 1.25rem;
     }
 
-    @media all and (min-device-width: 64.0625em) and (max-device-width: 100em) {
-        height: 4rem;
+    &__text {
+      padding-top: 0.25rem;
+    }
+  }
 
-        &__content {
-            font-size: 1.75rem;
-        }
+  @media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
+    height: 2.5rem;
 
-        &__text {
-            padding-top: 0.1rem;
-        }
+    &__content {
+      font-size: 1.1rem;
     }
 
-    @media all and (min-device-width: 50.0625em) and (max-device-width: 64em) {
-        height: 3.5rem;
-
-        &__content {
-            font-size: 1.5rem;
-        }
-
-        &__text {
-            padding-top: 0.25rem;
-        }
+    &__text {
+      padding-top: 0.25rem;
+      width: 60%;
     }
-
-    @media all and (min-device-width: 30.0625em) and (max-device-width: 50em) {
-        height: 3rem;
-
-        &__content {
-            font-size: 1.25rem;
-        }
-
-        &__text {
-            padding-top: 0.25rem;
-        }
-    }
-
-    @media all and (min-device-width: 3.125em) and (max-device-width: 30em) {
-        height: 2.5rem;
-
-        &__content {
-            font-size: 1.1rem;
-        }
-
-        &__text {
-            padding-top: 0.25rem;
-            width: 60%;
-        }
-    }
+  }
 }
