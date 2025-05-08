@@ -335,7 +335,6 @@ function RegistrationForm() {
             dispatchErrorMessage({type: "registration", payload: "Invalid data"});
             return;
         }
-        console.log(registrationFormState);
         if (userTypeInputStatus.valid && firstNameInputStatus.valid && lastNameInputStatus.valid && emailAddressInputStatus.valid && phoneNumberInputStatus.valid && passwordInputStatus.valid && confirmPasswordInputStatus.valid) {
             try {
                 setLoadingIconState(true);

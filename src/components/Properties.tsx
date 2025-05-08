@@ -391,7 +391,6 @@ function Properties(props: PropertiesPropsType) {
                         return (property.totalArea <= maximumAreaFilter) });
                 setProperties(filteredProperties.current);
             }
-            console.log(maximumAreaFilter);
         }
         if (!Number.isNaN(numberOfBedroomsFilter)) {
             if (filteredProperties.current) {
