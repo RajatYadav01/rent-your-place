@@ -9,9 +9,7 @@ const pool = new Pool({
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
-  ssl: {
-    require: process.env.DB_REQUIRE_SSL === "true",
-  },
+  ssl: process.env.DB_REQUIRE_SSL === "true" ? { rejectUnauthorized: true } : false,
 });
 
 types.setTypeParser(types.builtins.NUMERIC, (value) => parseFloat(value));
