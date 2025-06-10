@@ -408,7 +408,7 @@ function UpdatePropertyForm() {
             null;
       });
       const serverResponse = await axios.patch(
-        "http://localhost:3050/api/properties/update",
+        `${process.env.REACT_APP_BACKEND_API_URL}/properties/update`,
         JSON.stringify(updatedPropertyDetails),
         {
           headers: { "Content-Type": "application/json" },

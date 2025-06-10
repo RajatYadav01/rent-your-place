@@ -57,7 +57,7 @@ function Properties(props: PropertiesPropsType) {
     try {
       setLoadingIconState(true);
       const serverResponse = await axios.get(
-        "http://localhost:3050/api/properties/get",
+        `${process.env.REACT_APP_BACKEND_API_URL}/properties/get`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -112,7 +112,7 @@ function Properties(props: PropertiesPropsType) {
       (async () => {
         try {
           const response = await axios.get(
-            "http://localhost:3050/api/users/getID",
+            `${process.env.REACT_APP_BACKEND_API_URL}/users/getID`,
             {
               headers: {
                 "Content-Type": "application/json",
@@ -145,7 +145,7 @@ function Properties(props: PropertiesPropsType) {
                   likedByUserIDs: response.data.userID,
                 };
                 const serverResponse = await axios.patch(
-                  "http://localhost:3050/api/properties/update",
+                  `${process.env.REACT_APP_BACKEND_API_URL}/properties/update`,
                   JSON.stringify(updatedLikeCount),
                   {
                     headers: {
@@ -167,7 +167,7 @@ function Properties(props: PropertiesPropsType) {
                   unlikedByUserID: response.data.userID,
                 };
                 const serverResponse = await axios.patch(
-                  "http://localhost:3050/api/properties/unlikeProperty",
+                  `${process.env.REACT_APP_BACKEND_API_URL}/properties/unlikeProperty`,
                   JSON.stringify(updateUnlikedProperty),
                   {
                     headers: {
@@ -230,7 +230,7 @@ function Properties(props: PropertiesPropsType) {
     ) {
       try {
         const serverResponse = await axios.get(
-          "http://localhost:3050/api/properties/get-owner",
+          `${process.env.REACT_APP_BACKEND_API_URL}/properties/get-owner`,
           {
             headers: {
               "Content-Type": "application/json",
@@ -317,7 +317,7 @@ function Properties(props: PropertiesPropsType) {
     try {
       setPropertyToBeDeleted("");
       const serverResponse = await axios.delete(
-        "http://localhost:3050/api/properties/delete",
+        `${process.env.REACT_APP_BACKEND_API_URL}/properties/delete`,
         {
           headers: {
             "Content-Type": "application/json",

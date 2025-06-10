@@ -53,7 +53,7 @@ function Tenant(props: TenantPropsType) {
   const getID = async () => {
     try {
       const response: AxiosResponse = await axios.get(
-        "http://localhost:3050/api/users/getID",
+        `${process.env.REACT_APP_BACKEND_API_URL}/users/getID`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -79,7 +79,7 @@ function Tenant(props: TenantPropsType) {
   async function verifyUser(): Promise<void> {
     try {
       const serverResponse: AxiosResponse = await axios.get(
-        "http://localhost:3050/api/users/verify",
+        `${process.env.REACT_APP_BACKEND_API_URL}/users/verify`,
         {
           headers: {
             "Content-Type": "application/json",

@@ -332,7 +332,7 @@ function ResetPasswordForm(props: ResetPasswordFromPropsType) {
       try {
         setLoadingIconState(true);
         const serverResponse = await axios.patch(
-          "http://localhost:3050/api/users/resetPassword",
+          `${process.env.REACT_APP_BACKEND_API_URL}/users/resetPassword`,
           JSON.stringify(resetPasswordFormState),
           {
             headers: { "Content-Type": "application/json" },

@@ -264,7 +264,7 @@ function LoginForm() {
       try {
         setLoadingIconState(true);
         const serverResponse = await axios.post(
-          "http://localhost:3050/api/users/authenticate",
+          `${process.env.REACT_APP_BACKEND_API_URL}/users/authenticate`,
           JSON.stringify(loginFormState),
           {
             headers: { "Content-Type": "application/json" },

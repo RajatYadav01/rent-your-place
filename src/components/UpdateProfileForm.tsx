@@ -202,7 +202,7 @@ function UpdateProfileForm() {
   const getUserDetails = async () => {
     try {
       const response: AxiosResponse = await axios.get(
-        "http://localhost:3050/api/users/get",
+        `${process.env.REACT_APP_BACKEND_API_URL}/users/get`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -467,7 +467,7 @@ function UpdateProfileForm() {
     try {
       setDisplayDeleteDialogBox(false);
       const serverResponse = await axios.delete(
-        "http://localhost:3050/api/users/delete",
+        `${process.env.REACT_APP_BACKEND_API_URL}/users/delete`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -644,7 +644,7 @@ function UpdateProfileForm() {
       try {
         setLoadingIconState(true);
         const serverResponse = await axios.patch(
-          "http://localhost:3050/api/users/update",
+          `${process.env.REACT_APP_BACKEND_API_URL}/users/update`,
           JSON.stringify(updateProfileFormState),
           {
             headers: { "Content-Type": "application/json" },

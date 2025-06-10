@@ -531,7 +531,7 @@ function RegistrationForm() {
       try {
         setLoadingIconState(true);
         const serverResponse = await axios.post(
-          "http://localhost:3050/api/users/new",
+          `${process.env.REACT_APP_BACKEND_API_URL}/users/new`,
           JSON.stringify(registrationFormState),
           {
             headers: { "Content-Type": "application/json" },

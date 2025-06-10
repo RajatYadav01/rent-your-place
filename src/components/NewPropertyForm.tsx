@@ -355,7 +355,7 @@ function NewPropertyForm() {
   const addNewProperty = async () => {
     try {
       const serverResponse = await axios.post(
-        "http://localhost:3050/api/properties/new",
+        `${process.env.REACT_APP_BACKEND_API_URL}/properties/new`,
         JSON.stringify(propertyFormState),
         {
           headers: { "Content-Type": "application/json" },
@@ -414,7 +414,7 @@ function NewPropertyForm() {
     try {
       setLoadingIconState(true);
       const response = await axios.get(
-        "http://localhost:3050/api/users/getID",
+        `${process.env.REACT_APP_BACKEND_API_URL}/users/getID`,
         {
           headers: {
             "Content-Type": "application/json",

@@ -55,7 +55,7 @@ function Owner(props: OwnerPropsType) {
   const getID = async () => {
     try {
       const response: AxiosResponse = await axios.get(
-        "http://localhost:3050/api/users/getID",
+        `${process.env.REACT_APP_BACKEND_API_URL}/users/getID`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -81,7 +81,7 @@ function Owner(props: OwnerPropsType) {
   const verifyUser = async (): Promise<void> => {
     try {
       const serverResponse: AxiosResponse = await axios.get(
-        "http://localhost:3050/api/users/verify",
+        `${process.env.REACT_APP_BACKEND_API_URL}/users/verify`,
         {
           headers: {
             "Content-Type": "application/json",
