@@ -332,7 +332,7 @@ function UpdateProfileForm() {
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
   const passwordRegEx =
     /^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*\-_.?]).{8,50}$/;
-  const phoneNumberRegEx = /^\+[1-9]{1}[0-9]{3,14}$/;
+  const phoneNumberRegEx = /^(\+)?[1-9]{1}[0-9]{3,14}$/;
 
   const isUpdateButtonDisabled =
     !firstNameInputStatus.valid ||

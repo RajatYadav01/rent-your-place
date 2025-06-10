@@ -14,7 +14,7 @@ module.exports = async (request, response, next) => {
   }
 
   function isPhoneNumberValid(phoneNumber) {
-    return /^\+[1-9]{1}[0-9]{3,14}$/.test(phoneNumber);
+    return /^(\+)?[1-9]{1}[0-9]{3,14}$/.test(phoneNumber);
   }
 
   function isPasswordValid(password) {
