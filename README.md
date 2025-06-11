@@ -79,6 +79,7 @@ You need to have the following installed on your system:
 - npm (preferably, version >= v10.x)
 - PostgreSQL (preferably, version >= v16.x)
 - Git (preferably the latest version)
+- Docker (preferably the latest version)
 
 ### Setup
 
@@ -102,24 +103,50 @@ To modify and use this project locally on your system, follow these steps:
    npm install
    ```
 
-4) Open the backend folder of the project either in a different instance of the code editor or in a different instance of the CLI that you are using.
+4) Rename the `.env.example` file as `.env` in the main project folder to use the environment variables in the React application.
 
-5) Install all the dependencies using npm in the backend folder.
+5) Open the backend folder of the project either in a different instance of the code editor or in a different instance of the CLI that you are using.
+
+6) Install all the dependencies using npm in the backend folder.
 
    ```shell
    npm install
    ```
 
-6) Create a *user* with *password* and a *database* using the created *user* as owner in the PostgreSQL database since those are required to connect to the database. For this, you can either use the default values from the *env.example* file or use different values after updating them in the *env.example* file. Also, values of other variables can also be updated in the *env.example* file based on your preference.
+7) Create a `user` with `password` and a `database` using the created `user` as owner in the PostgreSQL database since those are required to connect to the database. For this, you can either use the default values from the `env.example` file or use different values after updating them in the `env.example` file. Also, values of other variables can also be updated in the `env.example` file based on your preference.
 
-7) Run the Node server in the backend folder.
+8) Run the Node server in the backend folder.
 
    ```shell
    npm run dev
    ```
 
-8) Go to the main project folder which is already open in other instance of the code editor and run the React application.
+9) Go to the main project folder which is already open in other instance of the code editor and run the React application.
 
    ```shell
    npm run start
    ```
+
+10) After the React application has started, open any browser and go to `http://localhost:3000` to access the application.<br /><br />
+
+To setup the project using Docker:
+
+1) Clone the project's repository.
+
+   ```shell
+   git clone https://github.com/rajatyadav01/rent-your-place.git
+   ```
+
+2) Go to the project folder using the CLI.
+
+   ```shell
+   cd rent-your-place
+   ```
+
+3) Run the project using docker-compose.
+
+   ```shell
+   docker-compose up --build
+   ```
+
+4) After all the containers have been started, open any browser and go to `http://localhost:3000` to access the application.

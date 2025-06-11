@@ -1,0 +1,56 @@
+services:
+  rent-your-place-database:
+    container_name: rent-your-place-database
+    image: postgres:16
+    environment:
+      - POSTGRES_USER=rent_your_place
+      - POSTGRES_PASSWORD=1851420
+      - POSTGRES_DB=rent_your_place
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5440:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "rent_your_place"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - rent-your-place
+
+  rent-your-place-backend:
+    container_name: rent-your-place-backend
+    build: 
+      context: ./rent-your-place-backend
+      dockerfile: Dockerfile
+    image: node-backend:latest
+    environment:
+      - DB_HOST=rent-your-place-database
+    depends_on:
+      rent-your-place-database:
+        condition: service_healthy
+    ports:
+      - "3050:3050"
+    networks:
+      - rent-your-place
+
+  rent-your-place-frontend:
+    container_name: rent-your-place-frontend
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: react-frontend:latest
+    depends_on:
+      - rent-your-place-backend
+    ports:
+      - "3000:80"
+    networks:
+      - rent-your-place
+
+volumes:
+  db-data:
+
+networks:
+  rent-your-place:
+    driver: bridge
