@@ -13,7 +13,7 @@ services:
       - "5440:5432"
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "rent_your_place"]
-      interval: 10s
+      interval: 60s
       timeout: 5s
       retries: 5
     networks:
